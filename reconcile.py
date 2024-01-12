@@ -1,8 +1,11 @@
+import itertools
+
 import pandas as pd
 import math
 from enum import Enum
 from utils import calculate_probability_mass, round_to_fraction, create_log_file_name
 import logging
+from model_wrapper import ModelWrapper
 
 
 class Subscript(Enum):
@@ -11,17 +14,17 @@ class Subscript(Enum):
 
 
 class Reconcile:
-    def __init__(self, f1, f2, dataset, target_feature_name, alpha, epsilon):
+    def __init__(self, f1: ModelWrapper, f2: ModelWrapper, dataset: pd.DataFrame, target_feature_name: str, alpha: float, epsilon: float):
         """
         Initializes the Reconcile class with two models, a dataset, and parameters alpha and epsilon.
 
         Parameters:
-        f1: The first model.
-        f2: The second model.
-        dataset: The dataset to be used (pandas dataframe).
-        target_feature_name : Name of the target feature in the dataset (str).
-        alpha: Approximate group conditional mean consistency parameter (float).
-        epsilon: disagreement threshhold (float).
+        f1: The first model(it should be an instance of the ModelWrapper class).
+        f2: The second model(it should be an instance of the ModelWrapper class).
+        dataset: The dataset to be used.
+        target_feature_name : Name of the target feature in the dataset.
+        alpha: Approximate group conditional mean consistency parameter.
+        epsilon: disagreement threshhold.
         """
         self.model1 = f1
         self.model2 = f2
@@ -40,9 +43,11 @@ class Reconcile:
         Use models f1 and f2 to make predictions on the dataset.
         Add these predictions as new columns to the dataset.
         """
-        # Assuming f1 and f2 have a 'predict' method and dataset is a DataFrame
-        self.dataset['f1_predictions'] = self.f1.predict(self.dataset)
-        self.dataset['f2_predictions'] = self.f2.predict(self.dataset)
+        feature_list = self.dataset.columns.tolist()
+        feature_list = [feature_name for feature_name in feature_list if feature_name not in ["assigned_id", self.target_feature]]
+
+        self.dataset['f1_predictions'] = self.model1.predict(self.dataset[feature_list])
+        self.dataset['f2_predictions'] = self.model2.predict(self.dataset[feature_list])
 
     def find_disagreement_set(self):
         """
@@ -68,14 +73,14 @@ class Reconcile:
         consistency_violation = -math.inf
         selected_subscript = -1
         selected_i = -1
-        for subscript, i in zip([Subscript.greater.value, Subscript.smaller.value], [0, 1]):
+        for subscript, i in itertools.product([Subscript.greater.value, Subscript.smaller.value], [0, 1]):
 
             new_consistency_violation = self.calculate_consistency_violation(u[subscript], v_star[subscript],
                                                                              v[i][subscript])
             # TODO: Breaking the tie is not currently arbitrary as the algorithm suggests.
             if new_consistency_violation > consistency_violation:
                 consistency_violation = new_consistency_violation
-                selected_subscript = u
+                selected_subscript = subscript
                 selected_i = i
         return selected_subscript, selected_i
 
@@ -90,7 +95,7 @@ class Reconcile:
 
     def reconcile(self):
         t = 0
-        m = round(2/(math.sqrt(self.alpha)*self.epsilon), 3)
+        m = round(2/(math.sqrt(self.alpha)*self.epsilon))
         u, u_greater, u_smaller = self.find_disagreement_set()
         while calculate_probability_mass(self.dataset, u) >= self.alpha:
             subscript, i = self.find_candidate_for_update(u_greater, u_smaller)
