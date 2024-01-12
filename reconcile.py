@@ -1,15 +1,17 @@
 import pandas as pd
 import math
 from enum import Enum
-from utils import calculate_probability_mass, round_to_fraction
+from utils import calculate_probability_mass, round_to_fraction, create_log_file_name
+import logging
 
 
 class Subscript(Enum):
     greater = 0
     smaller = 1
 
+
 class Reconcile:
-    def __init__(self, f1, f2, dataset,target_feature_name, alpha, epsilon):
+    def __init__(self, f1, f2, dataset, target_feature_name, alpha, epsilon):
         """
         Initializes the Reconcile class with two models, a dataset, and parameters alpha and epsilon.
 
@@ -29,6 +31,9 @@ class Reconcile:
         self.alpha = alpha
         self.epsilon = epsilon
         self.get_model_predictions()
+        self.predicitons_history_df = self.dataset[['f1_predictions', 'f2_predictions']].copy()
+        logging.basicConfig(filename='./logs/'+ create_log_file_name(self.alpha, self.epsilon) + ".log", encoding='utf-8',
+                            level=logging.DEBUG, format='%(asctime)s %(message)s')
 
     def get_model_predictions(self):
         """
@@ -78,7 +83,13 @@ class Reconcile:
         subset_ids = set(g['assigned_id'])
         self.dataset.loc[self.dataset['assigned_id'].isin(subset_ids), selected_model] += delta
 
+    def log_round_info(self,t,u,chosen_subscript,index,delta):
+        message = (f'round {t} complete. Miu(u) = {round(calculate_probability_mass(self.dataset, u),4)}.'
+                   f' u {Subscript(chosen_subscript).name} f_{index+1} was updated. update value(delta) = {delta}')
+        logging.info(message)
+
     def reconcile(self):
+        t = 0
         m = round(2/(math.sqrt(self.alpha)*self.epsilon), 3)
         u, u_greater, u_smaller = self.find_disagreement_set()
         while calculate_probability_mass(self.dataset, u) >= self.alpha:
@@ -89,6 +100,10 @@ class Reconcile:
             delta = g[self.target_feature].mean() - g[selected_model_predictions].mean()
             delta = round_to_fraction(delta, m)
             self.patch(selected_model_predictions, g, delta)
+            self.log_round_info(t,u,subscript, i,delta)
+            self.predicitons_history_df[f'{t}_{selected_model_predictions}'] = self.dataset[selected_model_predictions].copy()
+            t += 1
             u, u_greater, u_smaller = self.find_disagreement_set()
+        self.predicitons_history_df.to_csv('./logs/datasets/'+ create_log_file_name(self.alpha, self.epsilon) + ".csv", index=False)
 
 
