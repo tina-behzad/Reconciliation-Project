@@ -14,7 +14,7 @@ def round_to_fraction(v, m):
     Returns:
     float: The closest value of the form i/m to v.
     """
-    fractions = [i/m for i in range(m + 1)]
+    fractions = [i/m for i in range(-m,m + 1)]
     closest_fraction = min(fractions, key=lambda x: abs(x - v))
     return closest_fraction
 
