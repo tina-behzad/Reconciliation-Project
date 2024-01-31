@@ -1,5 +1,5 @@
 import itertools
-
+import random
 import pandas as pd
 import math
 from enum import Enum
@@ -77,11 +77,18 @@ class Reconcile:
 
             new_consistency_violation = self.calculate_consistency_violation(u[subscript], v_star[subscript],
                                                                              v[i][subscript])
-            # TODO: Breaking the tie is not currently arbitrary as the algorithm suggests.
+            selected_candidates = []
             if new_consistency_violation > consistency_violation:
                 consistency_violation = new_consistency_violation
-                selected_subscript = subscript
-                selected_i = i
+                selected_candidates.clear()
+                selected_candidates.append([selected_subscript, selected_i])
+            elif new_consistency_violation == consistency_violation:
+                selected_candidates.append([selected_subscript,selected_i])
+
+        # Break the tie arbitrary
+        selected_candidate = random.choice(selected_candidates)
+        selected_subscript = selected_candidate[0]
+        selected_i = selected_candidate[1]
         return selected_subscript, selected_i
 
     def patch(self, selected_model, g, delta):
@@ -103,7 +110,7 @@ class Reconcile:
             selected_model_predictions = "f1_predictions" if i==0 else "f2_predictions"
             g = u_greater if subscript == Subscript.greater.value else u_smaller
             delta = g[self.target_feature].mean() - g[selected_model_predictions].mean()
-            delta = round_to_fraction(abs(delta), m) if delta > 0 else -round_to_fraction(abs(delta), m)
+            delta = round_to_fraction(delta, m)
             self.patch(selected_model_predictions, g, delta)
             self.log_round_info(t,u,subscript, i,delta)
             self.predicitons_history_df[f'{t}_{selected_model_predictions}'] = self.dataset[selected_model_predictions].copy()
