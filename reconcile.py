@@ -73,11 +73,11 @@ class Reconcile:
         consistency_violation = -math.inf
         selected_subscript = -1
         selected_i = -1
+        selected_candidates = []
         for subscript, i in itertools.product([Subscript.greater.value, Subscript.smaller.value], [0, 1]):
 
             new_consistency_violation = self.calculate_consistency_violation(u[subscript], v_star[subscript],
                                                                              v[i][subscript])
-            selected_candidates = []
             if new_consistency_violation > consistency_violation:
                 consistency_violation = new_consistency_violation
                 selected_candidates.clear()

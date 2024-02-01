@@ -1,7 +1,6 @@
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-
-
+from sklearn.metrics import brier_score_loss
 class ModelWrapper:
     def __init__(self, model, train_x, train_y, ):
         """
@@ -39,3 +38,13 @@ class ModelWrapper:
         else:
             return self.model.predict(X)
 
+
+    def get_brier_score(self, data, labels):
+        predictions = self.predict(data)
+        return brier_score_loss(labels, predictions)
+
+    def save_model_to_file(self, model_name):
+        pass
+        # model_name = type(model).__name__
+        # with open(model_name + '.pkl', 'wb') as fid:
+        #     cPickle.dump(gnb, fid)
