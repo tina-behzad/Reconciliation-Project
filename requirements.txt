@@ -1,2 +1,3 @@
 pandas == 2.1.4
 fairlearn == 0.10.0
+matplotlib ==3.8.2
