@@ -13,7 +13,7 @@ class ModelWrapper:
         Initializes the ModelWrapper with a scikit-learn model.
 
         Parameters:
-        model (estimator): An instance of a scikit-learn model.
+        model (string): An instance of a scikit-learn model.
         """
         if model == 'LinearRegression':
             self.model = Pipeline([

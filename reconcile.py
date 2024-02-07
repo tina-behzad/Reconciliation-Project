@@ -77,7 +77,7 @@ class Reconcile:
         return u_epsilon, u_epsilon_greater, u_epsilon_smaller
 
     def calculate_consistency_violation(self, u, v_star, v):
-        return calculate_probability_mass(self.dataset, u) * v_star * v
+        return calculate_probability_mass(self.dataset, u) * pow((v_star - v),2)
 
     def find_candidate_for_update(self, u_greater, u_smaller):
         u = [u_greater, u_smaller]
