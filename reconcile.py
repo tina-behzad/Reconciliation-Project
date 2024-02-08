@@ -41,6 +41,7 @@ class Reconcile:
         self.predicitons_history_df = self.dataset[['f1_predictions', 'f2_predictions']].copy()
         logging.basicConfig(filename='./logs/'+ create_log_file_name(self.alpha, self.epsilon) + ".log", encoding='utf-8',
                             level=logging.DEBUG, format='%(asctime)s %(message)s')
+        logging.getLogger('matplotlib.font_manager').disabled = True
         logging.info(f'model 1 name: {type(self.model1.model[1]).__name__} model 2 name: {type(self.model2.model[1]).__name__}')
 
     def get_model_predictions(self):
@@ -143,6 +144,7 @@ class Reconcile:
         brier_scores = [[self.model1.get_brier_score(self.dataset['f1_predictions'],self.dataset[self.target_feature], True),
                                  self.model2.get_brier_score(self.dataset['f2_predictions'],self.dataset[self.target_feature], True)]]
         u, u_greater, u_smaller = self.find_disagreement_set()
+        print("initial disagreement level = {}".format(calculate_probability_mass(self.dataset, u)))
         while calculate_probability_mass(self.dataset, u) >= self.alpha:
             subscript, i = self.find_candidate_for_update(u_greater, u_smaller)
             # selected_model = self.model1 if i==0 else self.model2
