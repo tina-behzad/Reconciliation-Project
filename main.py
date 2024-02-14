@@ -6,7 +6,7 @@ from sklearn.naive_bayes import GaussianNB
 from pipeline import Pipeline
 
 #possible models
-#classifiers: (changes need to be made to modelwrapper for them to work
+#classifiers: (changes need to be made to modelwrapper for them to work)
 # LogisticRegression
 # RandomForestClassifier
 #regressions

@@ -23,7 +23,7 @@ def adult_data_cleansing():
     data.to_csv('../data/adult_cleaned.csv', index=False)
 
 
-def compasss_data_cleansing():
+def compas_data_cleansing():
     data = pd.read_csv('../data/compas.csv')
     data = data[(data["days_b_screening_arrest"] <= 30)
                 & (data["days_b_screening_arrest"] >= -30)

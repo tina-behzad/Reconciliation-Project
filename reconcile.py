@@ -21,8 +21,8 @@ class Reconcile:
         Initializes the Reconcile class with two models, a dataset, and parameters alpha and epsilon.
 
         Parameters:
-        f1: The first model(it should be an instance of the ModelWrapper class).
-        f2: The second model(it should be an instance of the ModelWrapper class).
+        f1: The first model (it should be an instance of the ModelWrapper class).
+        f2: The second model (it should be an instance of the ModelWrapper class).
         dataset: The dataset to be used.
         target_feature_name : Name of the target feature in the dataset.
         alpha: Approximate group conditional mean consistency parameter.

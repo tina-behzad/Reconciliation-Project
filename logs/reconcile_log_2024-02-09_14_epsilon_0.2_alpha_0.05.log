@@ -1,0 +1,11 @@
+2024-02-09 14:35:33,967 model 1 name: DecisionTreeRegressor model 2 name: LinearRegression
+2024-02-09 14:35:34,034 model 1 name: DecisionTreeRegressor model 2 name: LinearRegression
+2024-02-09 14:35:34,043 round 0 complete. Miu(u) = 0.1996. u greater f_1 was updated. update value(delta) = -0.35555555555555557
+2024-02-09 14:35:34,047 round 1 complete. Miu(u) = 0.0853. u smaller f_1 was updated. update value(delta) = 0.2222222222222222
+2024-02-09 14:35:34,049 total rounds 2 completed in 0. T1 = 2 T1=0 
+ brier_scores = [[0.045, 0.019], [0.029, 0.019], [0.026, 0.019]] 
+
+2024-02-09 14:35:34,049 1. 2 <= 360.0 
+ 2. 0.026 <= 0.045 and 0.019 <= 0.019 
+ 3. 0.019 < 0.05
+2024-02-09 14:35:34,086 Loaded backend macosx version unknown.

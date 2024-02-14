@@ -44,6 +44,7 @@ class Pipeline():
                 complete_data = X_test
                 complete_data[self.target_variable_name] = y_test
                 return model1, model2, complete_data
+            
     def find_similar_models_with_different_data(self):
         model_similarity_threshhold = float(self.config['Training_Configs']['Model_Similarity_Threshhold'])
         categorical_features = ast.literal_eval(self.config[self.dataset_name]['Categorical_Features'])
@@ -63,7 +64,6 @@ class Pipeline():
                 complete_data = X_test
                 complete_data[self.target_variable_name] = y_test
                 return model1, model2, complete_data
-
 
     def find_similar_models_with_different_features(self):
         model_similarity_threshhold = float(self.config['Training_Configs']['Model_Similarity_Threshhold'])
@@ -99,7 +99,7 @@ class Pipeline():
                 model2_feature_name_list = [list(X_test.columns)[i] for i in features2]
                 complete_data[self.target_variable_name] = y_test
                 return model1, model2, complete_data, [model1_feature_name_list, model2_feature_name_list]
-
+    
     def find_models(self):
         alpha = float(self.config['Reconciliation_Configs']['Alpha'])
         epsilon = float(self.config['Reconciliation_Configs']['Epsilon'])
