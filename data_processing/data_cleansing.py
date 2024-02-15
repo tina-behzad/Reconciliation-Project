@@ -30,7 +30,7 @@ def compas_data_cleansing():
                 & (data["is_recid"] != -1)
                 & (data["c_charge_degree"] != 'O')
                 & (data["score_text"] != 'N/A')].reset_index(drop=True)
-    data.to_csv('../data/compass_cleaned.csv', index=False)
+    data.to_csv('../data/compas_cleaned.csv', index=False)
 
 
 def communities_data_cleaning():
@@ -39,7 +39,6 @@ def communities_data_cleaning():
     data = data.replace(r'\s', '', regex=True)
     data = data.loc[:, ~data.apply(lambda x: x.astype(str).str.contains('\?')).any()]
     data = data.drop([3], axis=1)
-    print("hello")
     # data[target_column] = (data[target_column] == '>50K').astype(int)
     # data = data[~data.apply(lambda row: ' ?' in row.values, axis=1)]
     # data = data.drop(['fnlwgt', 'capital_loss', 'capital_gain', 'education'], axis=1)
@@ -58,6 +57,6 @@ def communities_data_cleaning():
     # data.loc[mask, 'marital_status'] = 'Married'
     data.to_csv('../data/communities_cleaned.csv', index=False)
 
-# adult_data_cleansing()
-
-communities_data_cleaning()
+#adult_data_cleansing()
+#compas_data_cleansing()
+#communities_data_cleaning()

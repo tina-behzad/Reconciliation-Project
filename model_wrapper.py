@@ -6,6 +6,7 @@ from sklearn.metrics import brier_score_loss, mean_squared_error
 from sklearn.linear_model import LogisticRegression, LinearRegression
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.dummy import DummyRegressor
+from sklearn.dummy import DummyClassifier
 from sklearn import tree
 
 # TODO: move feature list the model is trained on inside wrapper
@@ -32,7 +33,7 @@ class ModelWrapper:
         elif model == 'Dummy':
             self.model = Pipeline([
                 ('normalizer', StandardScaler()),
-                ('classifier', DummyRegressor(strategy="mean")), ])
+                ('classifier', DummyClassifier(strategy="uniform")), ])
         elif model == 'DecisionTree':
             self.model = Pipeline([
                 ('normalizer', StandardScaler()),
