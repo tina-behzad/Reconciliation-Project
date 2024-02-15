@@ -20,7 +20,7 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('configs.ini')
 
-    pipeline = Pipeline('Compas_Data', config, 'same data', ['Tree', 'LinearRegression'])
+    pipeline = Pipeline('Community_Data', config, 'same model', 'RandomRegressor')
     pipeline.run()
 
 

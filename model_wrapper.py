@@ -1,63 +1,61 @@
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import brier_score_loss, mean_squared_error
-from sklearn.linear_model import LogisticRegression, LinearRegression
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.dummy import DummyRegressor
-from sklearn.dummy import DummyClassifier
-from sklearn import tree
+from sklearn import linear_model, svm, tree, ensemble, dummy
+from sklearn.base import ClassifierMixin, RegressorMixin
+
+import models
+from models.random_regressor import RandomRegressor
+
 
 # TODO: move feature list the model is trained on inside wrapper
 class ModelWrapper:
-    def __init__(self, model, train_x, train_y, ):
+    def __init__(self, model, train_x, train_y, **kwargs ):
         """
         Initializes the ModelWrapper with a scikit-learn model.
 
         Parameters:
         model (string): An instance of a scikit-learn model.
         """
-        if model == 'LinearRegression':
-            self.model = Pipeline([
+        self.model = Pipeline([
             ('normalizer', StandardScaler()),
-            ('classifier', LinearRegression()),])
-        elif model == 'Tree':
-            self.model = Pipeline([
-                ('normalizer', StandardScaler()),
-                ('classifier', DecisionTreeRegressor()), ])
-        elif model == 'LogisticRegression':
-            self.model = Pipeline([
-                ('normalizer', StandardScaler()),
-                ('classifier', LogisticRegression()), ])
-        elif model == 'Dummy':
-            self.model = Pipeline([
-                ('normalizer', StandardScaler()),
-                ('classifier', DummyClassifier(strategy="uniform")), ])
-        elif model == 'DecisionTree':
-            self.model = Pipeline([
-                ('normalizer', StandardScaler()),
-                ('classifier', tree.DecisionTreeClassifier()), ])
+            ('classifier', self._get_model_instance(model, **kwargs))])
         self.model.fit(train_x, train_y)
+        self.return_probs = issubclass(type(self.model), ClassifierMixin)
 
+    def _get_model_instance(self, model_name, **kwargs):
+        # Dictionary mapping model names to their respective modules in scikit-learn
+        if model_name == 'RandomRegressor':
+            return RandomRegressor()
+        model_modules = {
+            'LinearRegression': linear_model,
+            'LogisticRegression': linear_model,
+            'DecisionTreeRegressor': tree,
+            'RandomForest': ensemble,
+            'DummyClassifier': dummy,
+            'DecisionTreeClassifier': tree
+            # Add more models and their respective modules as needed
+        }
 
+        if model_name not in model_modules:
+            raise ValueError(f"Model {model_name} is not supported.")
 
-    def predict(self, X, return_probabilities=False):
+        model_class = getattr(model_modules[model_name], model_name)
+        return model_class(**kwargs)
+
+    def predict(self, X ):
         """
         Predicts outcomes for samples in X.
 
         Parameters:
         X (array-like): Input data for making predictions.
-        return_probabilities (bool, optional): If True, returns class probabilities.
-                                                Otherwise, returns class predictions.
-                                                Defaults to True.
 
         Returns:
         array-like: Predicted class probabilities or class predictions.
         """
         # if not hasattr(self.model, 'classes_'):
         #     raise ValueError("Model has not been fitted yet. Please fit the model before calling predict.")
-        if return_probabilities:
+        if self.return_probs:
             if hasattr(self.model, 'predict_proba'):
                 return self.model.predict_proba(X)[:, 1]
             else:
