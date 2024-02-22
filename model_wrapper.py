@@ -1,7 +1,7 @@
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import brier_score_loss, mean_squared_error
-from sklearn import linear_model, svm, tree, ensemble, dummy
+from sklearn import linear_model, svm, tree, ensemble, dummy,neighbors
 from sklearn.base import ClassifierMixin, RegressorMixin
 
 import models
@@ -17,23 +17,30 @@ class ModelWrapper:
         Parameters:
         model (string): An instance of a scikit-learn model.
         """
-        self.model = Pipeline([
-            ('normalizer', StandardScaler()),
-            ('classifier', self._get_model_instance(model, **kwargs))])
-        self.model.fit(train_x, train_y)
+        if isinstance(model, str):
+            self.model = Pipeline([
+                ('normalizer', StandardScaler()),
+                ('classifier', self._get_model_instance(model, **kwargs))])
+            self.model.fit(train_x, train_y)
+        else:
+            self.model = model
+
         self.return_probs = issubclass(type(self.model), ClassifierMixin)
 
     def _get_model_instance(self, model_name, **kwargs):
         # Dictionary mapping model names to their respective modules in scikit-learn
         if model_name == 'RandomRegressor':
             return RandomRegressor()
+        if model_name == 'DummyClassifier':
+            return dummy.DummyClassifier(strategy='uniform')
         model_modules = {
             'LinearRegression': linear_model,
             'LogisticRegression': linear_model,
             'DecisionTreeRegressor': tree,
             'RandomForest': ensemble,
-            'DummyClassifier': dummy,
-            'DecisionTreeClassifier': tree
+            'KNeighborsClassifier': neighbors,
+            'DecisionTreeClassifier': tree,
+            'KNeighborsRegressor': neighbors
             # Add more models and their respective modules as needed
         }
 

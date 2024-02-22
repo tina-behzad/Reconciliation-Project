@@ -121,7 +121,7 @@ class Reconcile:
     def final_round_logs(self ,brier_scores,u,t,t1,t2, time):
         rounded_brier_scores = [ [round(score[0], 3), round(score[1], 3)]  for score in brier_scores ]
         message = (f'total rounds {t} completed in {time}. T1 = {t1} T1={t2} \n'
-                   f' brier_scores = {rounded_brier_scores} \n')
+                   f'brier_scores = {rounded_brier_scores} \n')
         print(message)
         logging.info(message)
         logging.info(self.calculate_theorem31(t,t1,t2,rounded_brier_scores[0], rounded_brier_scores[-1],u))
@@ -132,7 +132,7 @@ class Reconcile:
         brier_score_update_f1 = round(initial_brier_scores[0] - t1*(1/multiplier), 3)
         brier_score_update_f2 = round(initial_brier_scores[1] - t2*(1/multiplier), 3)
         final_mu = round(calculate_probability_mass(self.dataset, u),3)
-        message = f'1. {t} <= {rounds_upper_limit} \n 2. {final_brier_scores[0]} <= {brier_score_update_f1} and {final_brier_scores[1]} <= {brier_score_update_f2} \n 3. {final_mu} < {self.alpha}'
+        message = f'1. {t} <= {rounds_upper_limit} \n2. {final_brier_scores[0]} <= {brier_score_update_f1} and {final_brier_scores[1]} <= {brier_score_update_f2} \n3. {final_mu} < {self.alpha}'
         print(message)
         return message
     def reconcile(self):
@@ -167,7 +167,8 @@ class Reconcile:
         end_time = datetime.now()
         self.final_round_logs(brier_scores,u,t,t1,t2,(end_time-start_time).seconds)
         self.predicitons_history_df.to_csv('./logs/datasets/'+ create_log_file_name(self.alpha, self.epsilon) + ".csv", index=False)
-        self.plot(brier_scores, t)
+        return brier_scores[-1]
+        # self.plot(brier_scores, t)
 
     def plot(self, brier_scores, t):
         model1_scores = [sublist[0] for sublist in brier_scores]

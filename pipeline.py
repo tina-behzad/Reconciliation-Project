@@ -1,4 +1,6 @@
 import os
+from random import randint
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -34,7 +36,7 @@ class Pipeline():
 
         X = pd.get_dummies(self.data, columns=categorical_features,
                            drop_first=True)
-        sensitive_features = X.loc[:, self.sensitive_features]
+
         y = self.labels
         while True:
 
@@ -76,7 +78,7 @@ class Pipeline():
         categorical_features = ast.literal_eval(self.config[self.dataset_name]['Categorical_Features'])
         X = pd.get_dummies(self.data, columns=categorical_features,
                        drop_first=True)
-        sensitive_features = X.loc[:, self.sensitive_features]
+
         X_train, X_test, y_train, y_test,sensitive_data_train,sensitive_data_test  = train_test_split(X, self.labels,sensitive_features, test_size=0.3, random_state=None)
         feature_indices = np.arange(X_train.shape[1])
 
@@ -142,7 +144,7 @@ class Pipeline():
         epsilon = float(self.config['Reconciliation_Configs']['Epsilon'])
         trained_on_different_features = True if self.approach == 'different features' else False
         model1, model2, reconcile_data,sensitive_features_test_data, model_feature_lists = self.find_models()
-        self.calculate_fairness_metric(model1, reconcile_data.drop([self.target_variable_name], axis = 1), reconcile_data[self.target_variable_name], sensitive_features_test_data)
+        # self.calculate_fairness_metric(model1, reconcile_data.drop([self.target_variable_name], axis = 1), reconcile_data[self.target_variable_name], sensitive_features_test_data)
         reconcile_instance = Reconcile(model1, model2, reconcile_data, self.target_variable_name, alpha,
                                        epsilon, trained_on_different_features, model_feature_lists)
         reconcile_instance.reconcile()
