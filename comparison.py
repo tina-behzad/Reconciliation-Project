@@ -23,7 +23,7 @@ from utils import calculate_probability_mass, create_log_file_name
 
 config = configparser.ConfigParser()
 config.read('configs.ini')
-dataset_name = 'Adult_Data'
+dataset_name = 'Compas_Data'
 data_path = os.getcwd() + config[dataset_name]['Address']
 data = pd.read_csv(data_path)
 target_col_name = config[dataset_name]['Target_Col']

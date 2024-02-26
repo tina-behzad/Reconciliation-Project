@@ -144,7 +144,7 @@ class Pipeline():
         epsilon = float(self.config['Reconciliation_Configs']['Epsilon'])
         trained_on_different_features = True if self.approach == 'different features' else False
         model1, model2, reconcile_data,sensitive_features_test_data, model_feature_lists = self.find_models()
-        # self.calculate_fairness_metric(model1, reconcile_data.drop([self.target_variable_name], axis = 1), reconcile_data[self.target_variable_name], sensitive_features_test_data)
+        self.calculate_fairness_metric(model1, reconcile_data.drop([self.target_variable_name], axis = 1), reconcile_data[self.target_variable_name], sensitive_features_test_data)
         reconcile_instance = Reconcile(model1, model2, reconcile_data, self.target_variable_name, alpha,
                                        epsilon, trained_on_different_features, model_feature_lists)
         reconcile_instance.reconcile()
