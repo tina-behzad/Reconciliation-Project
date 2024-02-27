@@ -171,6 +171,10 @@ class Reconcile:
         return brier_scores[-1]
         # self.plot(brier_scores, t)
 
+    def get_reconciled_predictions(self):
+        f1_final_column_name = [col for col in self.predicitons_history_df.columns if 'f1' in col][-1]
+        f2_final_column_name = [col for col in self.predicitons_history_df.columns if 'f2' in col][-1]
+        return self.predicitons_history_df[f1_final_column_name], self.predicitons_history_df[f2_final_column_name]
     def plot(self, brier_scores, t):
         model1_scores = [sublist[0] for sublist in brier_scores]
         model2_scores = [sublist[1] for sublist in brier_scores]

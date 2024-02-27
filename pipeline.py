@@ -9,7 +9,7 @@ from model_wrapper import ModelWrapper
 from reconcile import Reconcile
 from utils import calculate_probability_mass
 from joblib import dump
-from fairlearn.metrics import equalized_odds_difference
+from fairlearn.metrics import equalized_odds_difference, equalized_odds_ratio
 
 class Pipeline():
     def __init__(self, dataset_name,config,approach,classifier):
@@ -33,6 +33,7 @@ class Pipeline():
     def find_similar_models_with_different_classifiers(self):
         model_similarity_threshhold = float(self.config['Training_Configs']['Model_Similarity_Threshhold'])
         categorical_features = ast.literal_eval(self.config[self.dataset_name]['Categorical_Features'])
+        sensitive_features = self.data.loc[:, self.sensitive_features]
 
         X = pd.get_dummies(self.data, columns=categorical_features,
                            drop_first=True)
@@ -41,9 +42,12 @@ class Pipeline():
         while True:
 
             X_train, X_test, y_train, y_test, sensitive_data_train,sensitive_data_test = train_test_split(X, y,sensitive_features, test_size=1 / 2, random_state=None)
-            model1 = ModelWrapper(self.classifier[0], X_train, y_train)
-            model2 = ModelWrapper(self.classifier[1], X_train, y_train)
-
+            if isinstance(self.classifier, list):
+                model1 = ModelWrapper(self.classifier[0], X_train, y_train)
+                model2 = ModelWrapper(self.classifier[1], X_train, y_train)
+            else:
+                model1 = ModelWrapper(self.classifier, X_train, y_train, random_state = randint(0,100))
+                model2 = ModelWrapper(self.classifier, X_train, y_train, random_state = randint(0,100))
             if abs(model1.get_brier_score(X_test, y_test) - model2.get_brier_score(X_test,
                                                                                    y_test)) < model_similarity_threshhold:
                 self.logs.append([model1.get_brier_score(X_test, y_test), model2.get_brier_score(X_test, y_test)])
@@ -78,7 +82,7 @@ class Pipeline():
         categorical_features = ast.literal_eval(self.config[self.dataset_name]['Categorical_Features'])
         X = pd.get_dummies(self.data, columns=categorical_features,
                        drop_first=True)
-
+        sensitive_features = X.loc[:, self.sensitive_features]
         X_train, X_test, y_train, y_test,sensitive_data_train,sensitive_data_test  = train_test_split(X, self.labels,sensitive_features, test_size=0.3, random_state=None)
         feature_indices = np.arange(X_train.shape[1])
 
@@ -135,19 +139,41 @@ class Pipeline():
         print(self.logs)
         return model1,model2,reconcile_data,sensitive_features_test, model_feature_lists
 
-    def calculate_fairness_metric(self, model, x_test,y_test, sensitive_features):
-        predicted_y = model.predict(x_test)
-        m_eq_ratio = equalized_odds_difference(y_test, predicted_y, sensitive_features = sensitive_features)
-        print(f'Value of equal odds ratio: {round(m_eq_ratio, 2)}')
+    def calculate_fairness_metrics_before_reconcile(self, model1,model2,x_test,y_test, sensitive_features):
+        predicted_y_model1 = model1.predict(x_test)
+        predicted_y_model1 = (predicted_y_model1 >= 0.5).astype(int)
+        m_eq_diff = equalized_odds_difference(y_test, predicted_y_model1, sensitive_features = sensitive_features)
+        m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model1, sensitive_features=sensitive_features)
+        print(f'Value of equal odds difference for first model: {round(m_eq_diff, 2)} value of equalized odds ratio for first model: {round(m_eq_ratio, 2)}')
+        predicted_y_model2 = model2.predict(x_test)
+        predicted_y_model2 = (predicted_y_model2 >= 0.5).astype(int)
+        m_eq_diff = equalized_odds_difference(y_test, predicted_y_model2, sensitive_features=sensitive_features)
+        m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model2, sensitive_features=sensitive_features)
+        print(
+            f'Value of equal odds difference for second model: {round(m_eq_diff, 2)} value of equalized odds ratio for second model: {round(m_eq_ratio, 2)}')
+
+    def calculate_fairness_metrics_after_reconcile(self, predictions1,predictions2,y_test, sensitive_features):
+        predicted_y_model1 = (predictions1 >= 0.5).astype(int)
+        m_eq_diff = equalized_odds_difference(y_test, predicted_y_model1, sensitive_features = sensitive_features)
+        m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model1, sensitive_features=sensitive_features)
+        print(f'After Reconcile: Value of equal odds difference for first model: {round(m_eq_diff, 2)} value of equalized odds ratio for first model: {round(m_eq_ratio, 2)}')
+        predicted_y_model2 = (predictions2 >= 0.5).astype(int)
+        m_eq_diff = equalized_odds_difference(y_test, predicted_y_model2, sensitive_features=sensitive_features)
+        m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model2, sensitive_features=sensitive_features)
+        print(
+            f'After Reconcile: Value of equal odds difference for second model: {round(m_eq_diff, 2)} value of equalized odds ratio for second model: {round(m_eq_ratio, 2)}')
     def run(self):
         alpha = float(self.config['Reconciliation_Configs']['Alpha'])
         epsilon = float(self.config['Reconciliation_Configs']['Epsilon'])
         trained_on_different_features = True if self.approach == 'different features' else False
         model1, model2, reconcile_data,sensitive_features_test_data, model_feature_lists = self.find_models()
-        self.calculate_fairness_metric(model1, reconcile_data.drop([self.target_variable_name], axis = 1), reconcile_data[self.target_variable_name], sensitive_features_test_data)
         reconcile_instance = Reconcile(model1, model2, reconcile_data, self.target_variable_name, alpha,
                                        epsilon, trained_on_different_features, model_feature_lists)
         reconcile_instance.reconcile()
+        self.calculate_fairness_metrics_before_reconcile(model1, model2,reconcile_data.drop([self.target_variable_name, 'f1_predictions','f2_predictions','assigned_id'], axis=1),
+                                                         reconcile_data[self.target_variable_name], sensitive_features_test_data)
+        model1_predictions, model2_predictions = reconcile_instance.get_reconciled_predictions()
+        self.calculate_fairness_metrics_after_reconcile(model1_predictions,model2_predictions, reconcile_data[self.target_variable_name], sensitive_features_test_data)
         self.save_models(model1, model2)
 
     def save_models(self, model1, model2):

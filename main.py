@@ -20,7 +20,13 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('configs.ini')
 
-    pipeline = Pipeline('Compas_Data', config, 'same model', 'DummyClassifier')
+    pipeline = Pipeline('Compas_Data', config, 'same model', 'LogisticRegression')
     pipeline.run()
 
 
+# KNeighborsClassifier
+# DecisionTreeClassifier
+# LogisticRegression
+# LinearRegression
+# DecisionTreeRegressor
+# KNeighborsRegressor

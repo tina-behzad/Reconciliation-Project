@@ -25,8 +25,8 @@ class ModelWrapper:
         else:
             self.model = model
 
-        self.return_probs = issubclass(type(self.model), ClassifierMixin)
-
+        # self.return_probs = issubclass(type(self.model), ClassifierMixin)
+        self.return_probs = True
     def _get_model_instance(self, model_name, **kwargs):
         # Dictionary mapping model names to their respective modules in scikit-learn
         if model_name == 'RandomRegressor':
