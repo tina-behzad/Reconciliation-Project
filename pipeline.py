@@ -144,24 +144,24 @@ class Pipeline():
         predicted_y_model1 = (predicted_y_model1 >= 0.5).astype(int)
         m_eq_diff = equalized_odds_difference(y_test, predicted_y_model1, sensitive_features = sensitive_features)
         m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model1, sensitive_features=sensitive_features)
-        print(f'Value of equal odds difference for first model: {round(m_eq_diff, 2)} value of equalized odds ratio for first model: {round(m_eq_ratio, 2)}')
+        print(f'Value of equal odds difference for first model: {round(m_eq_diff, 4)} value of equalized odds ratio for first model: {round(m_eq_ratio, 2)}')
         predicted_y_model2 = model2.predict(x_test)
         predicted_y_model2 = (predicted_y_model2 >= 0.5).astype(int)
         m_eq_diff = equalized_odds_difference(y_test, predicted_y_model2, sensitive_features=sensitive_features)
         m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model2, sensitive_features=sensitive_features)
         print(
-            f'Value of equal odds difference for second model: {round(m_eq_diff, 2)} value of equalized odds ratio for second model: {round(m_eq_ratio, 2)}')
+            f'Value of equal odds difference for second model: {round(m_eq_diff, 4)} value of equalized odds ratio for second model: {round(m_eq_ratio, 2)}')
 
     def calculate_fairness_metrics_after_reconcile(self, predictions1,predictions2,y_test, sensitive_features):
         predicted_y_model1 = (predictions1 >= 0.5).astype(int)
         m_eq_diff = equalized_odds_difference(y_test, predicted_y_model1, sensitive_features = sensitive_features)
         m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model1, sensitive_features=sensitive_features)
-        print(f'After Reconcile: Value of equal odds difference for first model: {round(m_eq_diff, 2)} value of equalized odds ratio for first model: {round(m_eq_ratio, 2)}')
+        print(f'After Reconcile: Value of equal odds difference for first model: {round(m_eq_diff, 4)} value of equalized odds ratio for first model: {round(m_eq_ratio, 2)}')
         predicted_y_model2 = (predictions2 >= 0.5).astype(int)
         m_eq_diff = equalized_odds_difference(y_test, predicted_y_model2, sensitive_features=sensitive_features)
         m_eq_ratio = equalized_odds_ratio(y_test, predicted_y_model2, sensitive_features=sensitive_features)
         print(
-            f'After Reconcile: Value of equal odds difference for second model: {round(m_eq_diff, 2)} value of equalized odds ratio for second model: {round(m_eq_ratio, 2)}')
+            f'After Reconcile: Value of equal odds difference for second model: {round(m_eq_diff, 4)} value of equalized odds ratio for second model: {round(m_eq_ratio, 2)}')
     def run(self):
         alpha = float(self.config['Reconciliation_Configs']['Alpha'])
         epsilon = float(self.config['Reconciliation_Configs']['Epsilon'])
