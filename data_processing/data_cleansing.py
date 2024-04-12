@@ -58,5 +58,5 @@ def communities_data_cleaning():
     data.to_csv('../data/communities_cleaned.csv', index=False)
 
 #adult_data_cleansing()
-#compas_data_cleansing()
-#communities_data_cleaning()
+# compas_data_cleansing()
+# communities_data_cleaning()

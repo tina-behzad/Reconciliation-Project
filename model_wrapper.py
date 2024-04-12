@@ -1,3 +1,4 @@
+from sklearn.exceptions import NotFittedError
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import brier_score_loss, mean_squared_error
@@ -21,12 +22,17 @@ class ModelWrapper:
             self.model = Pipeline([
                 ('normalizer', StandardScaler()),
                 ('classifier', self._get_model_instance(model, **kwargs))])
-            self.model.fit(train_x, train_y)
+            # self.model.fit(train_x, train_y)
         else:
             self.model = model
-
+        try:
+            self.model.predict(train_x)
+        except NotFittedError as e:
+            self.model.fit(train_x, train_y)
         # self.return_probs = issubclass(type(self.model), ClassifierMixin)
         self.return_probs = True
+        self.reconciled = False
+        self.predictions = None
     def _get_model_instance(self, model_name, **kwargs):
         # Dictionary mapping model names to their respective modules in scikit-learn
         if model_name == 'RandomRegressor':
@@ -50,7 +56,7 @@ class ModelWrapper:
         model_class = getattr(model_modules[model_name], model_name)
         return model_class(**kwargs)
 
-    def predict(self, X ):
+    def predict(self, X):
         """
         Predicts outcomes for samples in X.
 
@@ -62,18 +68,24 @@ class ModelWrapper:
         """
         # if not hasattr(self.model, 'classes_'):
         #     raise ValueError("Model has not been fitted yet. Please fit the model before calling predict.")
-        if self.return_probs:
-            if hasattr(self.model, 'predict_proba'):
-                return self.model.predict_proba(X)[:, 1]
-            else:
-                raise AttributeError("This model does not support probability predictions.")
+        if self.reconciled and (X is None):
+            return self.predictions
         else:
-            return self.model.predict(X)
+            if self.return_probs:
+                if hasattr(self.model, 'predict_proba'):
+                    return self.model.predict_proba(X)[:, 1]
+                else:
+                    raise AttributeError("This model does not support probability predictions.")
+            else:
+                return self.model.predict(X)
+
 
 
     def get_brier_score(self, data, labels, predictions = False):
         if predictions:
             return mean_squared_error(labels, data)
+        elif self.reconciled:
+            return mean_squared_error(labels, self.predictions)
             # return brier_score_loss(labels, data)
         predictions = self.predict(data)
         return mean_squared_error(labels, predictions)
@@ -84,3 +96,8 @@ class ModelWrapper:
         # model_name = type(model).__name__
         # with open(model_name + '.pkl', 'wb') as fid:
         #     cPickle.dump(gnb, fid)
+
+
+    def set_reconcile(self, reconciled_predictions):
+        self.reconciled = True
+        self.predictions = reconciled_predictions

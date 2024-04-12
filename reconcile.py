@@ -154,7 +154,7 @@ class Reconcile:
             delta = g[self.target_feature].mean() - g[selected_model_predictions].mean()
             delta = round_to_fraction(delta, m)
             self.patch(selected_model_predictions, g, delta)
-            self.log_round_info(t,u,subscript, i,delta)
+            # self.log_round_info(t,u,subscript, i,delta)
             self.predicitons_history_df[f'{t}_{selected_model_predictions}'] = self.dataset[selected_model_predictions].copy()
             brier_scores.append([self.model1.get_brier_score(self.dataset['f1_predictions'],self.dataset[self.target_feature], True),
                                  self.model2.get_brier_score(self.dataset['f2_predictions'],self.dataset[self.target_feature], True)])
@@ -168,6 +168,7 @@ class Reconcile:
         end_time = datetime.now()
         self.final_round_logs(brier_scores,u,t,t1,t2,(end_time-start_time).seconds)
         self.predicitons_history_df.to_csv('./logs/datasets/'+ create_log_file_name(self.alpha, self.epsilon) + ".csv", index=False)
+
         return brier_scores[-1]
         # self.plot(brier_scores, t)
 
