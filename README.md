@@ -1,5 +1,11 @@
 # Reconciling Predictive Multiplicity in Practice
 
+<div style="text-align: center;">
+  <span style="display: inline-block; margin: 0 10px;">Tina Behzad</span>
+  <span style="display: inline-block; margin: 0 10px;">Sílvia Casacuberta</span>
+  <span style="display: inline-block; margin: 0 10px;">Emily Diana</span>
+<span style="display: inline-block; margin: 0 10px;">Alexander Williams Tolbert</span>
+</div>
 <div style="text-align: justify;">
 <p>
     Many machine learning applications focus on predicting “individual probabilities”; for example, the probability that an
