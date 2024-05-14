@@ -37,6 +37,7 @@ class Experiment:
                             level=logging.DEBUG, format='%(asctime)s %(message)s')
         logging.getLogger('matplotlib.font_manager').disabled = True
         self.set_M = self.find_set_M(models)
+        self.predict_prob = True
 
 
     def prepare_data(self, dataset_name):
@@ -53,8 +54,8 @@ class Experiment:
         for name, model in classifiers:
             scaled_model = Pipeline([
                 ('normalizer', StandardScaler()),
-                ('classifier', model)])
-            scores = cross_val_score(scaled_model, self.X_train, self.y_train, cv=5, scoring='accuracy')
+                ('regressor', model)])
+            scores = cross_val_score(scaled_model, self.X_train, self.y_train, cv=5, scoring='neg_mean_squared_error')
             performance_scores[name] = scores.mean()
             print("{} is done".format(name))
 
@@ -72,23 +73,21 @@ class Experiment:
         return M
 
     def run_experiment(self):
-        variances = []
         set_M_predictions = self.get_set_M_predictions()
-        # logging.info("#########For set M##########")
-        # variances.append(self.calculate_metrics(set_M_predictions))
-        # all_combinations_predictions = self.get_all_combinations_reconciled()
-        # logging.info("#########For set M prime with all combinations##########")
-        # self.calculate_metrics(all_combinations_predictions)
-        # only_one_chosen_after_reconcile_predictions = all_combinations_predictions[0::2]
-        # logging.info("#########For set M prime only choosing one model after reconcile##########")
-        # self.calculate_metrics(only_one_chosen_after_reconcile_predictions)
-        # randomly_selected_after_reconcile = random.sample(all_combinations_predictions, len(self.set_M))
-        # logging.info("#########For set M prime choosing size(M) randomly##########")
-        # self.calculate_metrics(randomly_selected_after_reconcile)
+        logging.info("#########For set M##########")
+        self.calculate_metrics(set_M_predictions)
+        all_combinations_predictions = self.get_all_combinations_reconciled()
+        logging.info("#########For set M prime with all combinations##########")
+        self.calculate_metrics(all_combinations_predictions)
+        only_one_chosen_after_reconcile_predictions = all_combinations_predictions[0::2]
+        logging.info("#########For set M prime only choosing one model after reconcile##########")
+        self.calculate_metrics(only_one_chosen_after_reconcile_predictions)
+        randomly_selected_after_reconcile = random.sample(all_combinations_predictions, len(self.set_M))
+        logging.info("#########For set M prime choosing size(M) randomly##########")
+        self.calculate_metrics(randomly_selected_after_reconcile)
         contesting_set_predictions = self.get_contesting_set()
         logging.info("#########contesting##########")
         self.calculate_metrics(contesting_set_predictions)
-
 
     def calculate_metrics(self, prediction_lists):
         predictions = pd.DataFrame.from_dict({"model_"+ str(i) : prediction_lists[i] for i in range(0,len(prediction_lists))})
@@ -100,7 +99,7 @@ class Experiment:
         logging.info(f"discrepancy for the set over predictions is {discrepency:.4f}")
         logging.info("Disagreement values")
         logging.info(stats.describe(self.calculate_disagreement(predictions)))
-        return variance_in_perdictions
+        return [variance_in_perdictions, self.calculate_disagreement(predictions)]
 
 
     def get_all_combinations_reconciled(self):
@@ -171,7 +170,10 @@ class Experiment:
         predictions = []
         for model in self.set_M:
             model.fit(self.X_train, self.y_train)
-            predictions.append(model.predict_proba(self.X_test)[:, 1])
+            if self.predict_prob:
+                predictions.append(model.predict_proba(self.X_test)[:, 1])
+            else:
+                predictions.append(model.predict(self.X_test))
         return predictions
 
     def calculate_ambiguity(self, predictions):

@@ -1,25 +1,16 @@
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, RandomForestRegressor, \
+    GradientBoostingRegressor, AdaBoostRegressor
 import configparser
 from sklearn.linear_model import LogisticRegression, LinearRegression
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.naive_bayes import GaussianNB
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 
 from experiment import Experiment
 from pipeline import Pipeline
 
-#possible models
-#classifiers: (changes need to be made to modelwrapper for them to work)
-# LogisticRegression
-# RandomForestClassifier
-#regressions
-# 'Tree' for DecisionTreeRegressor
-#'LinearRegression' for linear regression
-#possible approaches:
-#same model classifier is a string
-#different features classifier is a string
-#same data classifier is a list
+
 if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('configs.ini')
@@ -40,15 +31,23 @@ if __name__ == "__main__":
         ('GaussianNB', GaussianNB()),
         # ('MLPClassifier', MLPClassifier(max_iter=500, random_state=42))
     ]
-    new_experiment = Experiment('Compas_Data',config,classifiers)
+
+    regressors = [
+        ('RandomForest1', RandomForestRegressor(n_estimators=100, random_state=42)),
+        ('RandomForest2', RandomForestRegressor(n_estimators=200, max_depth=10, random_state=42)),
+        ('GradientBoosting1', GradientBoostingRegressor(n_estimators=100, random_state=42)),
+        ('GradientBoosting2', GradientBoostingRegressor(n_estimators=200, learning_rate=0.05, random_state=42)),
+        # ('SVR1', SVR(kernel='linear')),
+        # ('SVR2', SVR(kernel='rbf', C=0.5)),
+        ('KNN1', KNeighborsRegressor()),
+        ('KNN2', KNeighborsRegressor(n_neighbors=3)),
+        ('DecisionTree1', DecisionTreeRegressor(max_depth=None, random_state=42)),
+        ('DecisionTree2', DecisionTreeRegressor(max_depth=10, random_state=42)),
+        # ('LinearRegression', LinearRegression()),  # Logistic Regression is typically not used in regression problems, replaced by Linear Regression
+        # ('Ridge', Ridge()),  # RidgeClassifier is replaced with Ridge for regression
+        ('AdaBoost', AdaBoostRegressor(random_state=42)),
+        # ('GaussianProcess', GaussianProcessRegressor()),  # GaussianNB typically does not have a direct regression counterpart, but Gaussian Process could be used in a similar context
+        # ('MLPRegressor', MLPRegressor(max_iter=500, random_state=42))  # If you need a neural network-based regressor
+    ]
+    new_experiment = Experiment('Adult_Data',config,classifiers)
     new_experiment.run_experiment()
-    # pipeline = Pipeline('Adult_Data', config, 'different features', 'LogisticRegression')
-    # pipeline.run()
-
-
-# KNeighborsClassifier
-# DecisionTreeClassifier
-# LogisticRegression
-# LinearRegression
-# DecisionTreeRegressor
-# KNeighborsRegressor

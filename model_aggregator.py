@@ -10,6 +10,7 @@ class ModelAggregator(BaseEstimator):
         self.models = models
         self.fit(train_X,train_y)
         self.technique = technique
+        self.return_probs = True
 
     def fit(self, X, y):
         # Fit all models on the training data
@@ -34,7 +35,10 @@ class ModelAggregator(BaseEstimator):
 
     def _predict_mean(self, X):
         # Collect predictions from all models and take the mode
-        predictions = np.array([model.predict_proba(X)[:, 1] for model in self.models])
+        if self.return_probs:
+            predictions = np.array([model.predict_proba(X)[:, 1] for model in self.models])
+        else:
+            predictions = np.array([model.predict(X) for model in self.models])
         mean_predictions = np.apply_along_axis(lambda x: np.mean(x), 0, predictions)
         return mean_predictions
 

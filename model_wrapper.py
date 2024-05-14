@@ -30,7 +30,7 @@ class ModelWrapper:
         except NotFittedError as e:
             self.model.fit(train_x, train_y)
         # self.return_probs = issubclass(type(self.model), ClassifierMixin)
-        self.return_probs = True
+        self.return_probs = False
         self.reconciled = False
         self.predictions = None
     def _get_model_instance(self, model_name, **kwargs):
@@ -83,6 +83,7 @@ class ModelWrapper:
 
     def get_brier_score(self, data, labels, predictions = False):
         if predictions:
+            # return brier_score_loss(labels, data)
             return mean_squared_error(labels, data)
         elif self.reconciled:
             return mean_squared_error(labels, self.predictions)

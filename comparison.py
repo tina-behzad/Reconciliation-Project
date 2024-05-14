@@ -59,8 +59,6 @@ def section_6(M, X_train, y_train, sensitive_data_test, test_y):
         logging.info("MSE for technique {} is {}".format(technique, brier_score))
         logging.info(
             f'Value of equal odds difference: {round(EO_difference, 4)} value of equalized odds ratio: {round(EO_ratio, 4)}')
-        prob_true, prob_pred = calibration_curve(test_y,predictions, n_bins=10)
-        plot_probability_vs_fraction(prob_pred,prob_true)
 
 
 def find_set_M(classifiers, X_train, y_train):
@@ -108,15 +106,15 @@ def model_selection_via_reconcile(models, X_train, y_train, X_test):
     model_wrapper1 = ModelWrapper(model1, X_train, y_train)
     model_wrapper2 = ModelWrapper(model2, X_train, y_train)
     chosen_model = apply_reconcile(model_wrapper1, model_wrapper2, X_test)
-    prob_true, prob_pred = calibration_curve(X_test[target_col_name], chosen_model.predict(None), n_bins=10)
-    plot_probability_vs_fraction(prob_pred, prob_true)
+    if not chosen_model.reconciled:
+        chosen_model.set_reconcile(chosen_model.predict(X_test.copy().drop(target_col_name, axis=1)))
     while models:
         next_model = random.choice(models)
         models.remove(next_model)
         model_wrapper = ModelWrapper(next_model, X_train, y_train)
         chosen_model = apply_reconcile(chosen_model, model_wrapper, X_test)
-        prob_true, prob_pred = calibration_curve(X_test[target_col_name], chosen_model.predict(None), n_bins=10)
-        plot_probability_vs_fraction(prob_pred, prob_true)
+        if not chosen_model.reconciled:
+            chosen_model.set_reconcile(chosen_model.predict(X_test.copy().drop(target_col_name, axis=1)))
     return chosen_model
 
 
@@ -157,9 +155,7 @@ M = find_set_M(classifiers,X_train, y_train)
 section_6(M, X_train, y_train, sensitive_data_test, y_test)
 X_test[target_col_name] = y_test
 final_model = model_selection_via_reconcile(M, X_train, y_train, X_test)
-prob_true, prob_pred = calibration_curve(X_test[target_col_name], final_model.predict(None), n_bins=10)
-plot_probability_vs_fraction(prob_pred,prob_true)
-print(prob_pred)
+#uncomment for reconciling all possible pairs
 # for model1,model2 in combinations(M, 2):
 #     model_wrapper1 = ModelWrapper(model1, X_train, y_train)
 #     model_wrapper2 = ModelWrapper(model2, X_train, y_train)
