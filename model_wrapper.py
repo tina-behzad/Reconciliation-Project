@@ -10,7 +10,7 @@ from models.random_regressor import RandomRegressor
 
 # TODO: move feature list the model is trained on inside wrapper
 class ModelWrapper:
-    def __init__(self, model, train_x, train_y, **kwargs ):
+    def __init__(self, model, train_x, train_y,return_prob, **kwargs ):
         """
         Initializes the ModelWrapper with a scikit-learn model.
 
@@ -26,13 +26,14 @@ class ModelWrapper:
             self.model = model
 
         # self.return_probs = issubclass(type(self.model), ClassifierMixin)
-        self.return_probs = True
+        self.return_probs = return_prob
     def _get_model_instance(self, model_name, **kwargs):
         # Dictionary mapping model names to their respective modules in scikit-learn
-        if model_name == 'RandomRegressor':
-            return RandomRegressor()
-        if model_name == 'DummyClassifier':
-            return dummy.DummyClassifier(strategy='uniform')
+        if model_name == "Dummy":
+            if self.return_probs:
+                return dummy.DummyClassifier(strategy='uniform')
+            else:
+                return RandomRegressor()
         model_modules = {
             'LinearRegression': linear_model,
             'LogisticRegression': linear_model,
@@ -63,10 +64,7 @@ class ModelWrapper:
         # if not hasattr(self.model, 'classes_'):
         #     raise ValueError("Model has not been fitted yet. Please fit the model before calling predict.")
         if self.return_probs:
-            if hasattr(self.model, 'predict_proba'):
-                return self.model.predict_proba(X)[:, 1]
-            else:
-                raise AttributeError("This model does not support probability predictions.")
+            return self.model.predict_proba(X)[:, 1]
         else:
             return self.model.predict(X)
 
@@ -79,8 +77,3 @@ class ModelWrapper:
         return mean_squared_error(labels, predictions)
         # return brier_score_loss(labels, predictions)
 
-    def save_model_to_file(self, model_name):
-        pass
-        # model_name = type(model).__name__
-        # with open(model_name + '.pkl', 'wb') as fid:
-        #     cPickle.dump(gnb, fid)
