@@ -1,0 +1,3 @@
+
+class FailureToFindModels(Exception):
+    pass
