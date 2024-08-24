@@ -4,28 +4,26 @@ import numpy as np
 from sklearn.metrics import brier_score_loss, mean_squared_error
 import random
 
+from wrappers.data_wrapper import Data_Wrapper
+
+
 class ModelAggregator(BaseEstimator):
-    def __init__(self, models,train_X, train_y, technique='mode'):
+    def __init__(self, models, technique):
         self.models = models
-        self.fit(train_X,train_y)
         self.technique = technique
 
-    def fit(self, X, y):
-        # Fit all models on the training data
-        for model in self.models:
-            model.fit(X, y)
-        return self
-
-    def predict(self, X, y):
+    def predict(self, data: Data_Wrapper):
         if self.technique == 'mode':
-            predictions =  self._predict_mode(X)
+            predictions =  self._predict_mode(data.test_x)
+        elif self.technique == 'mean':
+            predictions = self._predict_mean(data.test_x)
         elif self.technique == 'randomized':
-            predictions = self._predict_randomized(X)
+            predictions = self._predict_randomized(data.test_x)
         elif self.technique == 'random_selection':
-            predictions = self._predict_random_selection(X)
+            predictions = self._predict_random_selection(data.test_x)
         else:
             raise ValueError("Unknown technique specified.")
-        return mean_squared_error(y,predictions)
+        return predictions
 
     def _predict_mode(self, X):
         # Collect predictions from all models and take the mode
@@ -45,3 +43,10 @@ class ModelAggregator(BaseEstimator):
         # Randomly select a model and use it for all predictions
         model = random.choice(self.models)
         return model.predict(X)
+
+    def _predict_mean(self, X):
+        # Collect predictions from all models and take the mean
+        predictions = np.array([model.predict(X) for model in self.models])
+        mean_predictions = np.mean(predictions, axis=0)
+        return mean_predictions
+

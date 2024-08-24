@@ -20,7 +20,7 @@ class Subscript(Enum):
 
 
 class Reconcile:
-    def __init__(self, f1: ModelWrapper, f2: ModelWrapper, dataset: Data_Wrapper, alpha: float, epsilon: float):
+    def __init__(self, f1: ModelWrapper, f2: ModelWrapper, dataset: Data_Wrapper, alpha: float, epsilon: float, sequential_reconcile = False ):
         """
         Initializes the Reconcile class with two models, a dataset, and parameters alpha and epsilon.
 
@@ -34,6 +34,7 @@ class Reconcile:
         self.model1 = f1
         self.model2 = f2
         self.data = dataset
+        self.sequential_reconcile = sequential_reconcile
         # self.dataset.insert(0, 'assigned_id', range(0, len(self.dataset)))
         # self.target_feature = target_feature_name
         self.alpha = alpha
@@ -212,6 +213,13 @@ class Reconcile:
             u, u_greater, u_smaller = self.find_disagreement_set()
 
         end_time = datetime.now()
+        if self.sequential_reconcile:
+            chosen_model_subscript = random.choice([1,2])
+            chosen_model = self.model1 if chosen_model_subscript == 1 else self.model2
+            prediction1, prediction2 = self.get_reconciled_predictions()
+            chosen_model_predictions = prediction1 if chosen_model_subscript == 1 else prediction2
+
+            return chosen_model, chosen_model_predictions
         self.final_round_logs(brier_scores, u, t, t1, t2, (end_time - start_time).seconds, initial_disagreement,
                               result_file_name, result_dict)
         self.predicitons_history_df.to_csv('./logs/datasets/' + create_log_file_name(self.alpha, self.epsilon) + ".csv",
@@ -243,3 +251,9 @@ class Reconcile:
 
         plt.tight_layout()  # Adjust the layout to make room for the elements
         plt.show()  # Display the plot
+
+    # def flush_and_reset_prediction_history(self,model1_prediction, model2_prediction):
+    #     self.predicitons_history_df = pd.DataFrame(columns=['f1_predictions', 'f2_predictions'],
+    #                                                index=self.data.get_whole_data(return_test_and_val_only=True).index)
+    #     self.predicitons_history_df['f1_predictions'], self.predicitons_history_df[
+    #         'f2_predictions'] = model1_prediction, model2_prediction

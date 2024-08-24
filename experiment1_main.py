@@ -1,21 +1,13 @@
 import ast
 import configparser
 import itertools
-import os
 import traceback
 from datetime import datetime
 
 import pandas as pd
 
 from pipelines.experiment1_pipeline import ExperimentOnePipeline
-from wrappers.data_wrapper import Data_Wrapper
-
-
-def create_data_wrapper(data_address, target_name, categorical_features):
-    data_path = os.getcwd() + data_address
-    data = pd.read_csv(data_path)
-    return Data_Wrapper(data, target_name, ast.literal_eval(categorical_features))
-
+from utils import create_data_wrapper
 
 if __name__ == '__main__':
     config = configparser.ConfigParser()

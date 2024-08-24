@@ -21,13 +21,17 @@ class ModelWrapper:
         """
         self.return_probs = return_prob
         self.trained_on_features = trained_on_features
+        self.reconciled = False
+        self.predictions = None
         if isinstance(model, str):
             self.model = Pipeline([
                 ('normalizer', StandardScaler()),
                 ('classifier', self._get_model_instance(model, **kwargs))])
-            self.model.fit(train_x, train_y)
         else:
-            self.model = model
+            self.model = Pipeline([
+                ('normalizer', StandardScaler()),
+                ('classifier', model)])
+        self.model.fit(train_x, train_y)
 
         # self.return_probs = issubclass(type(self.model), ClassifierMixin)
 
@@ -56,6 +60,8 @@ class ModelWrapper:
         return model_class(**kwargs)
 
     def predict(self, data):
+        if self.reconciled:
+            return self.predictions
         if isinstance(data, pd.DataFrame):
             return self._predict_for_dataframe(data)
         elif isinstance(data, Data_Wrapper):
@@ -118,3 +124,6 @@ class ModelWrapper:
         return mean_squared_error(labels, predictions)
         # return brier_score_loss(labels, predictions)
 
+    def set_reconcile(self,predictions):
+        self.reconciled = True
+        self.predictions = predictions

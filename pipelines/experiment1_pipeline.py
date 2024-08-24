@@ -11,11 +11,11 @@ from utils import calculate_probability_mass
 
 
 class ExperimentOnePipeline:
-    def __init__(self, data: Data_Wrapper, approach, classifier, is_classification, alpha, epsilon,
+    def __init__(self, data: Data_Wrapper, approach, model, is_classification, alpha, epsilon,
                  model_similarity_threshold):
         self.data = data
         self.approach = approach
-        self.classifier = classifier
+        self.model = model
         self.is_classification = is_classification
         self.logs = []
         self.alpha = alpha
@@ -23,15 +23,15 @@ class ExperimentOnePipeline:
         self.model_similarity_threshold = model_similarity_threshold
 
     def find_similar_models_with_different_classifiers(self):
-        if isinstance(self.classifier, list):
-            model1 = ModelWrapper(self.classifier[0], self.data.train_X, self.data.train_y, self.is_classification,
+        if isinstance(self.model, list):
+            model1 = ModelWrapper(self.model[0], self.data.train_X, self.data.train_y, self.is_classification,
                                   None)
-            model2 = ModelWrapper(self.classifier[1], self.data.train_X, self.data.train_y, self.is_classification,
+            model2 = ModelWrapper(self.model[1], self.data.train_X, self.data.train_y, self.is_classification,
                                   None)
         else:
-            model1 = ModelWrapper(self.classifier, self.data.train_X, self.data.train_y, self.is_classification, None,
+            model1 = ModelWrapper(self.model, self.data.train_X, self.data.train_y, self.is_classification, None,
                                   random_state=randint(0, 100))
-            model2 = ModelWrapper(self.classifier, self.data.train_X, self.data.train_y, self.is_classification, None,
+            model2 = ModelWrapper(self.model, self.data.train_X, self.data.train_y, self.is_classification, None,
                                   random_state=randint(0, 100))
         if abs(model1.get_brier_score(self.data.val_X, self.data.val_y) - model2.get_brier_score(self.data.val_X,
                                                                                                  self.data.val_y)) < self.model_similarity_threshold:
@@ -46,8 +46,8 @@ class ExperimentOnePipeline:
         while attempts < 30:
             X_train1, X_train2, y_train1, y_train2 = train_test_split(self.data.train_X, self.data.train_y,
                                                                       test_size=0.5, random_state=None)
-            model1 = ModelWrapper(self.classifier, X_train1, y_train1, self.is_classification, None)
-            model2 = ModelWrapper(self.classifier, X_train2, y_train2, self.is_classification, None)
+            model1 = ModelWrapper(self.model, X_train1, y_train1, self.is_classification, None)
+            model2 = ModelWrapper(self.model, X_train2, y_train2, self.is_classification, None)
 
             attempts += 1
             if (abs(model1.get_brier_score(self.data.val_X, self.data.val_y) - model2.get_brier_score(self.data.val_X,
@@ -75,9 +75,9 @@ class ExperimentOnePipeline:
             # Also split the test dataset based on the selected features for evaluation
             X_test1, X_test2 = self.data.val_X.iloc[:, features1], self.data.val_X.iloc[:, features2]
 
-            model1 = ModelWrapper(self.classifier, X_train1, self.data.train_y, self.is_classification,
+            model1 = ModelWrapper(self.model, X_train1, self.data.train_y, self.is_classification,
                                   [list(self.data.train_X.columns)[i] for i in features1])
-            model2 = ModelWrapper(self.classifier, X_train2, self.data.train_y, self.is_classification,
+            model2 = ModelWrapper(self.model, X_train2, self.data.train_y, self.is_classification,
                                   [list(self.data.train_X.columns)[i] for i in features2])
             # Calculate Brier scores on the test dataset, but only using the respective features
             brier_score1 = model1.get_brier_score(X_test1, self.data.val_y)

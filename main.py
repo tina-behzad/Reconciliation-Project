@@ -1,9 +1,5 @@
-from sklearn.ensemble import RandomForestClassifier
 import configparser
-from sklearn.linear_model import LogisticRegression, LinearRegression
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.naive_bayes import GaussianNB
-from pipeline import Pipeline
+from pipelines.experiment1_pipeline import ExperimentOnePipeline
 
 #possible models
 # LogisticRegression
@@ -21,6 +17,6 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('configs.ini')
 
-    pipeline = Pipeline('Community_Data', config, 'same model', 'LinearRegression')
+    pipeline = ExperimentOnePipeline('Community_Data', config, 'same model', 'LinearRegression')
     pipeline.run()
 
