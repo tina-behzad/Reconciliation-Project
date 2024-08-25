@@ -2,6 +2,7 @@ import itertools
 import random
 from csv import DictWriter
 
+import numpy as np
 import pandas as pd
 import math
 from enum import Enum
@@ -20,7 +21,7 @@ class Subscript(Enum):
 
 
 class Reconcile:
-    def __init__(self, f1: ModelWrapper, f2: ModelWrapper, dataset: Data_Wrapper, alpha: float, epsilon: float, sequential_reconcile = False ):
+    def __init__(self, f1: ModelWrapper, f2: ModelWrapper, dataset: Data_Wrapper, alpha: float, epsilon: float, exp_2_3 = False ):
         """
         Initializes the Reconcile class with two models, a dataset, and parameters alpha and epsilon.
 
@@ -34,7 +35,7 @@ class Reconcile:
         self.model1 = f1
         self.model2 = f2
         self.data = dataset
-        self.sequential_reconcile = sequential_reconcile
+        self.is_experiment_2_3 = exp_2_3
         # self.dataset.insert(0, 'assigned_id', range(0, len(self.dataset)))
         # self.target_feature = target_feature_name
         self.alpha = alpha
@@ -43,6 +44,7 @@ class Reconcile:
         # self.model_feature_lists = model_feature_lists
         self.predicitons_history_df = pd.DataFrame(columns=['f1_predictions', 'f2_predictions'],
                                                    index=self.data.get_whole_data(return_test_and_val_only=True).index)
+        self.predicitons_history_df["actual_labels"] = self.data.get_all_labels(return_test_and_val_only = True)
         self.predicitons_history_df['f1_predictions'], self.predicitons_history_df[
             'f2_predictions'] = self.get_model_predictions()
         logging.basicConfig(filename='./logs/' + create_log_file_name(self.alpha, self.epsilon) + ".log",
@@ -157,7 +159,8 @@ class Reconcile:
         rounds_upper_limit = round((final_brier_scores[0] + final_brier_scores[1]) * multiplier, 3)
         brier_score_update_f1 = round(initial_brier_scores[0] - t1 * (1 / multiplier), 3)
         brier_score_update_f2 = round(initial_brier_scores[1] - t2 * (1 / multiplier), 3)
-        final_mu = round(calculate_probability_mass(self.data.get_whole_data(return_test_and_val_only=True), u), 3)
+        final_mu = round(calculate_probability_mass(self.data.test_x,
+                                                          self.data.seperate_data_section(u, return_section="test")), 3)
         message = f'1. {t} <= {rounds_upper_limit} |2. {final_brier_scores[0]} <= {brier_score_update_f1} and {final_brier_scores[1]} <= {brier_score_update_f2} |3. {final_mu} < {self.alpha}'
         print(message)
         return message, final_mu
@@ -190,9 +193,14 @@ class Reconcile:
             selected_model_predictions = self.predicitons_history_df[
                 [col for col in self.predicitons_history_df.columns if selected_model_predictions_col_name in col][-1]]
             g = u_greater if subscript == Subscript.greater.value else u_smaller
-            delta = self.data.return_intersection_true_label(g,
-                                                             return_section="val").mean() - self.data.seperate_intersection_data(
+            if self.model1.return_probs:
+                predictions_for_delta = self.data.seperate_intersection_data(selected_model_predictions, g, return_section="test_val")
+                predictions_for_delta = np.where(predictions_for_delta >= 0.5,1,0).mean()
+            else:
+                predictions_for_delta = self.data.seperate_intersection_data(
                 selected_model_predictions, g, return_section="test_val").mean()
+            delta = self.data.return_intersection_true_label(g,
+                                                             return_section="val").mean() - predictions_for_delta
             delta = round_to_fraction(delta, m)
             new_predictions = self.patch(selected_model_predictions.copy(), g, delta)
             self.log_round_info(t, u, subscript, i, delta)
@@ -213,7 +221,7 @@ class Reconcile:
             u, u_greater, u_smaller = self.find_disagreement_set()
 
         end_time = datetime.now()
-        if self.sequential_reconcile:
+        if self.is_experiment_2_3:
             chosen_model_subscript = random.choice([1,2])
             chosen_model = self.model1 if chosen_model_subscript == 1 else self.model2
             prediction1, prediction2 = self.get_reconciled_predictions()
@@ -222,7 +230,7 @@ class Reconcile:
             return chosen_model, chosen_model_predictions
         self.final_round_logs(brier_scores, u, t, t1, t2, (end_time - start_time).seconds, initial_disagreement,
                               result_file_name, result_dict)
-        self.predicitons_history_df.to_csv('./logs/datasets/' + create_log_file_name(self.alpha, self.epsilon) + ".csv",
+        self.predicitons_history_df.to_csv('./logs/datasets/new/'+ result_dict["Data"] + result_dict["Method"]+ result_dict["Models"] + create_log_file_name(self.alpha, self.epsilon) + ".csv",
                                            index=False)
         return brier_scores[-1]
         # self.plot(brier_scores, t)

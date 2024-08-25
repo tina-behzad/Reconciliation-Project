@@ -29,8 +29,10 @@ class Data_Wrapper():
     #     self.train_predicted = None
     #     self.test_predicted = None
 
-    # def get_all_prediction(self):
-    #     return pd.concat([self.train_predicted, self.test_predicted])
+    def get_all_labels(self, return_test_and_val_only = False):
+        if return_test_and_val_only:
+            return pd.concat([self.val_y,self.test_y])
+        return pd.concat([self.train_y,self.val_y,self.test_y])
 
     # def get_test_prediction(self, complete_predictions):
     #     return complete_predictions[self.train_X.shape[0]:]
