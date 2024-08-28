@@ -1,5 +1,6 @@
 import ast
 import configparser
+import copy
 import itertools
 import traceback
 from datetime import datetime
@@ -9,6 +10,7 @@ import pandas as pd
 from models.model_sets import classification_models, regression_models
 from pipelines.experiment1_pipeline import ExperimentOnePipeline
 from pipelines.experiment2_pipeline import ExperimentTwoPipeline
+from pipelines.experiment3_pipeline import ExperimentThreePipeline
 from utils import create_data_wrapper
 
 if __name__ == '__main__':
@@ -17,7 +19,7 @@ if __name__ == '__main__':
     experiment_2_results_csv_file_name = "./results/experiment2 " + datetime.now().strftime("%Y%m%d-%H%M") + '.csv'
     experiment_3_results_csv_file_name = "./results/experiment3 " + datetime.now().strftime("%Y%m%d-%H%M") + '.csv'
     exp_2_columns = ["Data","Method","MSE"]
-    exp_3_columns = ["Data","Method","Measure"]
+    exp_3_columns = ["Data","Method","Measure","Value"]
     results_2_df = pd.DataFrame(
         columns=exp_2_columns).to_csv(experiment_2_results_csv_file_name, index=False)
     results_3_df = pd.DataFrame(
@@ -30,31 +32,15 @@ if __name__ == '__main__':
                                    config[dataset_name]['Categorical_Features'])
         is_classification = ast.literal_eval(config[dataset_name]['Classification'])
         models = classification_models if is_classification else regression_models
+        #second experiment
+        models_pipeline2 = [copy.deepcopy(model) for model in models]
         result_2_dict = {"Data": dataset_name}
-        exp_2_pipeline = ExperimentTwoPipeline(data,models,is_classification,alpha,epsilon,model_similarity_threshold)
+        exp_2_pipeline = ExperimentTwoPipeline(data,models_pipeline2,is_classification,alpha,epsilon,model_similarity_threshold)
         exp_2_pipeline.run(experiment_2_results_csv_file_name,result_2_dict)
 
-        # for method in ast.literal_eval(config['Training_Configs']['Possible_approaches']):
-        #     if method == 'Dummy':
-        #         pipeline = ExperimentOnePipeline(data, method, 'Dummy', is_classification, alpha, epsilon,
-        #                                          model_similarity_threshold)
-        #         result_dict = {"Data": dataset_name, "Method": method, "Models": 'Dummy'}
-        #         pipeline.run(results_csv_file_name, result_dict)
-        #     elif method == 'different models':
-        #         for model1, model2 in itertools.combinations(models, 2):
-        #             try:
-        #                 pipeline = ExperimentOnePipeline(data, method, [model1, model2], is_classification, alpha, epsilon,
-        #                                                  model_similarity_threshold)
-        #                 result_dict = {"Data": dataset_name.replace("_Data",""),"Method":method, "Models":[model1, model2]}
-        #                 pipeline.run(results_csv_file_name, result_dict)
-        #             except:
-        #                 print(traceback.format_exc())
-        #     else:
-        #         for model in models:
-        #             try:
-        #                 pipeline = ExperimentOnePipeline(data, method, model, is_classification, alpha, epsilon,
-        #                                                  model_similarity_threshold)
-        #                 result_dict = {"Data": dataset_name,"Method": method, "Models": model}
-        #                 pipeline.run(results_csv_file_name, result_dict)
-        #             except:
-        #                 print(traceback.format_exc())
+        #Third experiment
+        models_pipeline3 = [copy.deepcopy(model) for model in models]
+        result_3_dict = {"Data": dataset_name}
+        exp_3_pipeline = ExperimentThreePipeline(data, models_pipeline3, is_classification, alpha, epsilon,
+                                               model_similarity_threshold)
+        exp_3_pipeline.run(experiment_3_results_csv_file_name, result_3_dict)
