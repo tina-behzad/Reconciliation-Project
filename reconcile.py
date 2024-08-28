@@ -194,8 +194,8 @@ class Reconcile:
                 [col for col in self.predicitons_history_df.columns if selected_model_predictions_col_name in col][-1]]
             g = u_greater if subscript == Subscript.greater.value else u_smaller
             if self.model1.return_probs:
-                predictions_for_delta = self.data.seperate_intersection_data(selected_model_predictions, g, return_section="test_val")
-                predictions_for_delta = np.where(predictions_for_delta >= 0.5,1,0).mean()
+                predictions_for_delta = self.data.seperate_intersection_data(selected_model_predictions, g, return_section="test_val").mean()
+                # predictions_for_delta = np.where(predictions_for_delta >= 0.5,1,0).mean()
             else:
                 predictions_for_delta = self.data.seperate_intersection_data(
                 selected_model_predictions, g, return_section="test_val").mean()
@@ -218,6 +218,8 @@ class Reconcile:
             else:
                 t2 += 1
             t += 1
+            if t > 50:
+                print("here")
             u, u_greater, u_smaller = self.find_disagreement_set()
 
         end_time = datetime.now()
