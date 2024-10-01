@@ -150,7 +150,7 @@ class Reconcile:
             dictwriter_object = DictWriter(f_object, fieldnames=result_dict.keys())
             dictwriter_object.writerow(result_dict)
             f_object.close()
-        print(message)
+        # print(message)
         logging.info(message)
         logging.info(theorem31)
 
@@ -162,7 +162,7 @@ class Reconcile:
         final_mu = round(calculate_probability_mass(self.data.test_x,
                                                           self.data.seperate_data_section(u, return_section="test")), 3)
         message = f'1. {t} <= {rounds_upper_limit} |2. {final_brier_scores[0]} <= {brier_score_update_f1} and {final_brier_scores[1]} <= {brier_score_update_f2} |3. {final_mu} < {self.alpha}'
-        print(message)
+        # print(message)
         return message, final_mu
 
     def reconcile(self, result_file_name, result_dict):
@@ -184,7 +184,7 @@ class Reconcile:
         #  Decided: for reports, only test for calculations both test and val!
         initial_disagreement = calculate_probability_mass(self.data.test_x,
                                                           self.data.seperate_data_section(u, return_section="test"))
-        print("initial disagreement level = {}".format(initial_disagreement))
+        # print("initial disagreement level = {}".format(initial_disagreement))
         logging.info("initial disagreement level = {}".format(initial_disagreement))
         while calculate_probability_mass(self.data.get_whole_data(return_test_and_val_only=True), u) >= self.alpha:
             subscript, i = self.find_candidate_for_update(u_greater, u_smaller)
@@ -220,6 +220,7 @@ class Reconcile:
             t += 1
             if t > 50:
                 print("here")
+                break
             u, u_greater, u_smaller = self.find_disagreement_set()
 
         end_time = datetime.now()
@@ -232,8 +233,8 @@ class Reconcile:
             return chosen_model, chosen_model_predictions
         self.final_round_logs(brier_scores, u, t, t1, t2, (end_time - start_time).seconds, initial_disagreement,
                               result_file_name, result_dict)
-        self.predicitons_history_df.to_csv('./logs/datasets/new/'+ result_dict["Data"] + result_dict["Method"]+ result_dict["Models"] + create_log_file_name(self.alpha, self.epsilon) + ".csv",
-                                           index=False)
+        # self.predicitons_history_df.to_csv('./logs/datasets/new/'+ result_dict["Data"] + result_dict["Method"]+ result_dict["Models"] + create_log_file_name(self.alpha, self.epsilon) + ".csv",
+        #                                    index=False)
         return brier_scores[-1]
         # self.plot(brier_scores, t)
 

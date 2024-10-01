@@ -111,7 +111,7 @@ class ExperimentOnePipeline:
                     self.data.get_whole_data(return_test_and_val_only=True), u)
                 self.logs.append(current_models_disagreement_set_probability_mass)
                 attempt += 1
-                print(self.logs)
+                # print(self.logs)
                 if current_models_disagreement_set_probability_mass >= self.alpha:
                     return model1, model2
             except FailureToFindModels:
