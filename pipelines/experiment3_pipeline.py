@@ -39,7 +39,7 @@ class ExperimentThreePipeline:
             scoring = "accuracy" if self.is_classification else "neg_mean_squared_error"
             scores = cross_val_score(scaled_model, self.data.train_X, self.data.train_y, cv=5, scoring=scoring)
             performance_scores[name] = scores.mean()
-            print("{} is done".format(name))
+            # print("{} is done".format(name))
         top_score = max(performance_scores.values())
         threshold = top_score - self.model_similarity_threshold
 

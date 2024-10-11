@@ -5,7 +5,7 @@ import itertools
 import traceback
 import warnings
 from datetime import datetime
-
+from tqdm import tqdm
 import pandas as pd
 
 from models.model_sets import classification_models, regression_models
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     epsilon = float(config['Reconciliation_Configs']['Epsilon'])
     model_similarity_threshold = float(config['Training_Configs']['Model_Similarity_Threshhold'])
     Experiment_Repeat_Numbers = int(config['Training_Configs']['Experiment_Repeat_Numbers'])
-    for i in range(Experiment_Repeat_Numbers):
+    for i in tqdm(range(Experiment_Repeat_Numbers)):
         for dataset_name in ast.literal_eval(config['Training_Configs']['Datasets']):
             data = create_data_wrapper(config[dataset_name]['Address'], config[dataset_name]['Target_Col'],
                                        config[dataset_name]['Categorical_Features'])

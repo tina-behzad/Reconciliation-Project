@@ -6,8 +6,8 @@ from sklearn.model_selection import train_test_split
 class Data_Wrapper():
     def __init__(self,data,target_feature_name, categorical_features, split_ratio=0.2):
         x_dummies = pd.get_dummies(data.drop(columns=[target_feature_name],axis=1),columns=categorical_features, drop_first=True)
-        X_train, self.test_x, y_train, self.test_y = train_test_split(x_dummies, data[target_feature_name], test_size=split_ratio, random_state=1)
-        self.train_X, self.val_X, self.train_y, self.val_y = train_test_split(X_train, y_train, test_size=(split_ratio/(1-split_ratio)), random_state=1) #0.25 x 0.8 = 0.2
+        X_train, self.test_x, y_train, self.test_y = train_test_split(x_dummies, data[target_feature_name], test_size=split_ratio)
+        self.train_X, self.val_X, self.train_y, self.val_y = train_test_split(X_train, y_train, test_size=(split_ratio/(1-split_ratio))) #0.25 x 0.8 = 0.2
         # self.train_X = train_X
         # self.train_y = train_y
         # self.test_x = test_X

@@ -12,7 +12,7 @@ from wrappers.data_wrapper import Data_Wrapper
 
 # TODO: move feature list the model is trained on inside wrapper
 class ModelWrapper:
-    def __init__(self, model, train_x, train_y,return_prob,trained_on_features, **kwargs ):
+    def __init__(self, model, train_x, train_y,return_prob,trained_on_features,is_CATE = False, **kwargs ):
         """
         Initializes the ModelWrapper with a scikit-learn model.
 
@@ -23,15 +23,20 @@ class ModelWrapper:
         self.trained_on_features = trained_on_features
         self.reconciled = False
         self.predictions = None
-        if isinstance(model, str):
-            self.model = Pipeline([
-                ('normalizer', StandardScaler()),
-                ('classifier', self._get_model_instance(model, **kwargs))])
+        self.is_CATE = is_CATE
+        if self.is_CATE:
+            self.model = None
+            self.predictions = train_y
         else:
-            self.model = Pipeline([
-                ('normalizer', StandardScaler()),
-                ('classifier', model)])
-        self.model.fit(train_x, train_y)
+            if isinstance(model, str):
+                self.model = Pipeline([
+                    ('normalizer', StandardScaler()),
+                    ('classifier', self._get_model_instance(model, **kwargs))])
+            else:
+                self.model = Pipeline([
+                    ('normalizer', StandardScaler()),
+                    ('classifier', model)])
+            self.model.fit(train_x, train_y)
 
         # self.return_probs = issubclass(type(self.model), ClassifierMixin)
 
@@ -65,6 +70,8 @@ class ModelWrapper:
         if isinstance(data, pd.DataFrame):
             return self._predict_for_dataframe(data)
         elif isinstance(data, Data_Wrapper):
+            if self.is_CATE:
+                return self.predictions
             return self._predict_for_data_wrapper(data)
         else:
             raise TypeError("Unsupported data type")

@@ -51,8 +51,8 @@ class Reconcile:
                             encoding='utf-8',
                             level=logging.DEBUG, format='%(asctime)s %(message)s')
         logging.getLogger('matplotlib.font_manager').disabled = True
-        logging.info(
-            f'model 1 name: {type(self.model1.model[1]).__name__} model 2 name: {type(self.model2.model[1]).__name__}')
+        # logging.info(
+        #     f'model 1 name: {type(self.model1.model[1]).__name__} model 2 name: {type(self.model2.model[1]).__name__}')
         # logging.info(f'dataset name: {dataset_name}')
 
     def get_model_predictions(self):

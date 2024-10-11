@@ -1,0 +1,2801 @@
+Data,Method,MSE
+German_Data,mode,0.187
+German_Data,randomized,0.18
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.176
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.179
+Community_Data,mean,0.019
+Community_Data,randomized,0.027
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.23
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.173
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.143
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.21
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.212
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.177
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.173
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.026
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.219
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.216
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.168
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.171
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.188
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.039
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.182
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.167
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.137
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.233
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.215
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.183
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.173
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.223
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.189
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.146
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.214
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.172
+Community_Data,mean,0.019
+Community_Data,randomized,0.028
+Community_Data,random_selection,0.039
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.231
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.209
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.177
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.018
+Community_Data,sequential reconcile,0.024
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.217
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.14
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.175
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.212
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.178
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.23
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.18
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.168
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.212
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.213
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.184
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.161
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.026
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.217
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.19
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.143
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.175
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.039
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.217
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.125
+German_Data,mode,0.187
+German_Data,randomized,0.177
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.17
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.186
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.232
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.12
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.172
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.189
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.22
+Compas_Data,random_selection,0.23
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.188
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.163
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.018
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.125
+German_Data,mode,0.187
+German_Data,randomized,0.196
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.171
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.145
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.214
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.123
+German_Data,mode,0.187
+German_Data,randomized,0.189
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.018
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.213
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.118
+German_Data,mode,0.187
+German_Data,randomized,0.201
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.19
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.15
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.178
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.209
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.123
+German_Data,mode,0.187
+German_Data,randomized,0.178
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.175
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.174
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.164
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.139
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.163
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.179
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.185
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.194
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.192
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.181
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.221
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.212
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.196
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.188
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.23
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.208
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.136
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.018
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.218
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.176
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.177
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.21
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.194
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.189
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.18
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.135
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.18
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.027
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.118
+German_Data,mode,0.187
+German_Data,randomized,0.171
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.188
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.157
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.178
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.12
+German_Data,mode,0.187
+German_Data,randomized,0.173
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.163
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.194
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.148
+Folk_Income_Data,sequential reconcile,0.149
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.174
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.163
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.221
+Compas_Data,random_selection,0.23
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.16
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.157
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.188
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.027
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.233
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.173
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.17
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.143
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.21
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.026
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.216
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.187
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.162
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.139
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.027
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.184
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.21
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.233
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.215
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.176
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.144
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.212
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.141
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.19
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.19
+Community_Data,mean,0.019
+Community_Data,randomized,0.021
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.222
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.141
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.178
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.214
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.213
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.118
+German_Data,mode,0.187
+German_Data,randomized,0.186
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.172
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.146
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.212
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.209
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.186
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.139
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.229
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.122
+German_Data,mode,0.187
+German_Data,randomized,0.189
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.164
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.223
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.177
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.168
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.145
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.183
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.018
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.214
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.188
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.166
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.139
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.188
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.191
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.03
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.221
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.135
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.121
+German_Data,mode,0.187
+German_Data,randomized,0.194
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.185
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.152
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.222
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.18
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.168
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.147
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.214
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.018
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.229
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.214
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.167
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.152
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.02
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.214
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.196
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.179
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.186
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.039
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.222
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.179
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.18
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.179
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.221
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.167
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.172
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.173
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.173
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.021
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.018
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.233
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.218
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.176
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.168
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.157
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.021
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.237
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.224
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.14
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.118
+German_Data,mode,0.187
+German_Data,randomized,0.192
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.182
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.18
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.206
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.12
+German_Data,mode,0.187
+German_Data,randomized,0.188
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.171
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.232
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.207
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.173
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.212
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.231
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.172
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.217
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.14
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.184
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.18
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.183
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.135
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.121
+German_Data,mode,0.187
+German_Data,randomized,0.178
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.177
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.191
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.206
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.135
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.179
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.164
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.209
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.222
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.197
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.162
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.157
+Folk_Income_Data,random_selection,0.148
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.021
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.192
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.176
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.018
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.222
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.207
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.186
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.148
+Folk_Income_Data,sequential reconcile,0.143
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.212
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.193
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.172
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.191
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.164
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.174
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.175
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.139
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.185
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.192
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.179
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.218
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.187
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.164
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.137
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.212
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.14
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.179
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.167
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.187
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.212
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.129
+German_Data,mode,0.187
+German_Data,randomized,0.186
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.157
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.135
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.18
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.039
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.209
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.175
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.167
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.148
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.23
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.113
+German_Data,mode,0.187
+German_Data,randomized,0.184
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.137
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.232
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.185
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.163
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.21
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.175
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.026
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.209
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.182
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.166
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.194
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.219
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.184
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.135
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.133
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.17
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.172
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.212
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.189
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.182
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.122
+German_Data,mode,0.187
+German_Data,randomized,0.172
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.17
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.194
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.118
+German_Data,mode,0.187
+German_Data,randomized,0.185
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.181
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.209
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.026
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.231
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.218
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.173
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.18
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.142
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.214
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.189
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.037
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.229
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.174
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.213
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.177
+Community_Data,mean,0.019
+Community_Data,randomized,0.027
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.217
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.187
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.189
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.217
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.156
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.177
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.021
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.213
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.194
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.178
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.194
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.039
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.208
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.141
+Adult_Data,random_selection,0.119
+Adult_Data,sequential reconcile,0.115
+German_Data,mode,0.187
+German_Data,randomized,0.188
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.178
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.182
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.022
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.211
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.123
+German_Data,mode,0.187
+German_Data,randomized,0.171
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.167
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.148
+Folk_Income_Data,sequential reconcile,0.144
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.018
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.229
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.193
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.161
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.135
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.213
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.179
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.17
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.242
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.184
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.139
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.182
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.164
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.194
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.218
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.135
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.12
+German_Data,mode,0.187
+German_Data,randomized,0.188
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.138
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.21
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.173
+Folk_Mobility_Data,sequential reconcile,0.185
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.024
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.122
+German_Data,mode,0.187
+German_Data,randomized,0.197
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.169
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.165
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.179
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.022
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.207
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.135
+Adult_Data,random_selection,0.142
+Adult_Data,sequential reconcile,0.133
+German_Data,mode,0.187
+German_Data,randomized,0.197
+German_Data,random_selection,0.223
+German_Data,sequential reconcile,0.171
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.138
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.211
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.191
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.026
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.228
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.207
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.185
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.172
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.148
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.022
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.226
+Compas_Data,random_selection,0.232
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.186
+German_Data,random_selection,0.187
+German_Data,sequential reconcile,0.17
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.159
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.137
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.177
+Community_Data,mean,0.019
+Community_Data,randomized,0.02
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.219
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.136
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.184
+German_Data,random_selection,0.163
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.143
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.214
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.191
+Folk_Mobility_Data,sequential reconcile,0.181
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.221
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.123
+German_Data,mode,0.187
+German_Data,randomized,0.185
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.165
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.157
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.139
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.19
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.186
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.205
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.116
+German_Data,mode,0.187
+German_Data,randomized,0.169
+German_Data,random_selection,0.167
+German_Data,sequential reconcile,0.168
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.207
+Folk_Travel_Data,sequential reconcile,0.21
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.191
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.173
+Community_Data,mean,0.019
+Community_Data,randomized,0.025
+Community_Data,random_selection,0.025
+Community_Data,sequential reconcile,0.025
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.231
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.22
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.118
+German_Data,mode,0.187
+German_Data,randomized,0.192
+German_Data,random_selection,0.165
+German_Data,sequential reconcile,0.168
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.141
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.211
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.175
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.223
+Compas_Data,random_selection,0.243
+Compas_Data,sequential reconcile,0.217
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.137
+Adult_Data,random_selection,0.111
+Adult_Data,sequential reconcile,0.114
+German_Data,mode,0.187
+German_Data,randomized,0.169
+German_Data,random_selection,0.215
+German_Data,sequential reconcile,0.174
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.143
+Folk_Income_Data,sequential reconcile,0.143
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.174
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.019
+Community_Data,sequential reconcile,0.019
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.23
+Compas_Data,random_selection,0.248
+Compas_Data,sequential reconcile,0.218
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.123
+Adult_Data,sequential reconcile,0.117
+German_Data,mode,0.187
+German_Data,randomized,0.181
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.188
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.181
+Folk_Income_Data,sequential reconcile,0.134
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.211
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.192
+Folk_Mobility_Data,random_selection,0.247
+Folk_Mobility_Data,sequential reconcile,0.185
+Community_Data,mean,0.019
+Community_Data,randomized,0.023
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.227
+Compas_Data,random_selection,0.253
+Compas_Data,sequential reconcile,0.22
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.115
+Adult_Data,sequential reconcile,0.119
+German_Data,mode,0.187
+German_Data,randomized,0.166
+German_Data,random_selection,0.168
+German_Data,sequential reconcile,0.163
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.158
+Folk_Income_Data,random_selection,0.134
+Folk_Income_Data,sequential reconcile,0.14
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.21
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.208
+Folk_Mobility_Data,sequential reconcile,0.18
+Community_Data,mean,0.019
+Community_Data,randomized,0.026
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.02
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.224
+Compas_Data,random_selection,0.215
+Compas_Data,sequential reconcile,0.208
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.129
+Adult_Data,sequential reconcile,0.111
+German_Data,mode,0.187
+German_Data,randomized,0.187
+German_Data,random_selection,0.169
+German_Data,sequential reconcile,0.184
+Folk_Income_Data,mode,0.148
+Folk_Income_Data,randomized,0.16
+Folk_Income_Data,random_selection,0.145
+Folk_Income_Data,sequential reconcile,0.135
+Folk_Travel_Data,mode,0.21
+Folk_Travel_Data,randomized,0.21
+Folk_Travel_Data,random_selection,0.217
+Folk_Travel_Data,sequential reconcile,0.207
+Folk_Mobility_Data,mode,0.173
+Folk_Mobility_Data,randomized,0.193
+Folk_Mobility_Data,random_selection,0.174
+Folk_Mobility_Data,sequential reconcile,0.177
+Community_Data,mean,0.019
+Community_Data,randomized,0.024
+Community_Data,random_selection,0.02
+Community_Data,sequential reconcile,0.023
+Compas_Data,mode,0.238
+Compas_Data,randomized,0.225
+Compas_Data,random_selection,0.205
+Compas_Data,sequential reconcile,0.219
+Adult_Data,mode,0.136
+Adult_Data,randomized,0.138
+Adult_Data,random_selection,0.234
+Adult_Data,sequential reconcile,0.117
