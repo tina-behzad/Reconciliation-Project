@@ -10,13 +10,10 @@ Many machine learning applications focus on predicting “individual probabiliti
   <em>Figure 1: Visualization of Reconcile Algorithm</em>
 </p>
 
-The main branch includes the pipeline for running Reconcile. The pipeline consists of:
-1. Finding similar models with significant disagreements.
-2. Running Reconcile.
+Experiment1_main.py includes the experiments for building models. Experiment_2_3_main.py includes the experiment with the sets, including the Sequential Reconcile.
+main.py includes the CATE experiment.
 
-In the main branch, `comparison.py` includes experiments for comparing Reconcile with methods suggested in section 6 from "Model multiplicity: Opportunities, concerns, and solutions" (Black, Raghavan, and Barocas 2022). These experiments focus on choosing one model from the set of models with similar accuracy.
-
-The comparison branch includes experiments on quantifying the severity of predictive multiplicity in a set.
+All results from the experiments are available in the results directory and notebooks for visualizing them are in the visualization directory.
 
 <p align="center">
   <img src="figures/diagram_complete.png" alt="experiments" width="650" height="700">
