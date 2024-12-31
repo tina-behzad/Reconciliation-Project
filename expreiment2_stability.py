@@ -31,8 +31,6 @@ if __name__ == '__main__':
             models = classification_models if is_classification else regression_models
             models_pipeline2 = [copy.deepcopy(model) for model in models]
             result_2_dict = {"Data": dataset_name}
-            exp_2_pipeline = Stability_Pipeline(data, models_pipeline2, is_classification, alpha, epsilon,
-                                                model_similarity_threshold)
             if i == 0:
                 exp_2_pipeline = Stability_Pipeline(data, models_pipeline2, is_classification, alpha, epsilon,
                                                     model_similarity_threshold)

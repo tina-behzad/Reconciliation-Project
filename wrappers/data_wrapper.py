@@ -1,13 +1,15 @@
+import itertools
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
 class Data_Wrapper():
-    def __init__(self,data,target_feature_name, categorical_features, split_ratio=0.2):
+    def __init__(self,data,target_feature_name, categorical_features, split_ratio=0.2, sensitive_features = None):
         x_dummies = pd.get_dummies(data.drop(columns=[target_feature_name],axis=1),columns=categorical_features, drop_first=True)
         X_train, self.test_x, y_train, self.test_y = train_test_split(x_dummies, data[target_feature_name], test_size=split_ratio)
         self.train_X, self.val_X, self.train_y, self.val_y = train_test_split(X_train, y_train, test_size=(split_ratio/(1-split_ratio))) #0.25 x 0.8 = 0.2
+        self.sensitive_features = sensitive_features
         # self.train_X = train_X
         # self.train_y = train_y
         # self.test_x = test_X
@@ -68,3 +70,20 @@ class Data_Wrapper():
             return self.val_y.loc[given_dataset.index.intersection(self.val_y.index)]
 
 
+    def get_groups_data(self):
+        if len(self.sensitive_features) > 1:
+            combinations = list(itertools.product([0, 1], repeat=len(self.sensitive_features)))
+            dfs = []
+            for combination in combinations:
+                # Create a filter condition for the current combination
+                condition = (self.test_x[self.sensitive_features] == pd.Series(combination, index=self.sensitive_features)).all(axis=1)
+
+                # Filter the DataFrame
+                filtered_df = self.test_x[condition]
+                if filtered_df.shape[0] != 0:
+                    dfs.append(filtered_df)
+            return dfs
+        else:
+            sensitive_column_name = self.sensitive_features[0]
+            groups = self.test_x[sensitive_column_name].unique()
+            return [self.test_x[self.test_x[sensitive_column_name]==value] for value in groups]
