@@ -165,7 +165,7 @@ class Reconcile:
         # print(message)
         return message, final_mu
 
-    def reconcile(self, result_file_name, result_dict):
+    def reconcile(self, result_file_name, result_dict, save_to_file = True):
         start_time = datetime.now()
         t = 0
         t1 = 0
@@ -231,7 +231,8 @@ class Reconcile:
             chosen_model_predictions = prediction1 if chosen_model_subscript == 1 else prediction2
 
             return chosen_model, chosen_model_predictions
-        self.final_round_logs(brier_scores, u, t, t1, t2, (end_time - start_time).seconds, initial_disagreement,
+        if save_to_file:
+            self.final_round_logs(brier_scores, u, t, t1, t2, (end_time - start_time).seconds, initial_disagreement,
                               result_file_name, result_dict)
         # self.predicitons_history_df.to_csv('./logs/datasets/new/'+ result_dict["Data"] + result_dict["Method"]+ result_dict["Models"] + create_log_file_name(self.alpha, self.epsilon) + ".csv",
         #                                    index=False)

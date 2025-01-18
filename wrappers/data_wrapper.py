@@ -70,20 +70,26 @@ class Data_Wrapper():
             return self.val_y.loc[given_dataset.index.intersection(self.val_y.index)]
 
 
-    def get_groups_data(self):
+    def get_groups_data(self, return_section = 'test'):
         if len(self.sensitive_features) > 1:
             combinations = list(itertools.product([0, 1], repeat=len(self.sensitive_features)))
             dfs = []
             for combination in combinations:
                 # Create a filter condition for the current combination
                 condition = (self.test_x[self.sensitive_features] == pd.Series(combination, index=self.sensitive_features)).all(axis=1)
-
-                # Filter the DataFrame
                 filtered_df = self.test_x[condition]
                 if filtered_df.shape[0] != 0:
+                    if return_section == 'test_val':
+                        condition = (self.val_X[self.sensitive_features] == pd.Series(combination, index=self.sensitive_features)).all(axis=1)
+                        filtered_val = self.val_X[condition]
+                        filtered_df = pd.concat([filtered_val, filtered_df])
                     dfs.append(filtered_df)
             return dfs
         else:
             sensitive_column_name = self.sensitive_features[0]
             groups = self.test_x[sensitive_column_name].unique()
-            return [self.test_x[self.test_x[sensitive_column_name]==value] for value in groups]
+            data = [self.test_x[self.test_x[sensitive_column_name] == value] for value in groups]
+            if return_section == 'test_val':
+                val_data = [self.val_X[self.val_X[sensitive_column_name]==value] for value in groups]
+                data = [pd.concat([val,test]) for (val,test) in zip(val_data,data)]
+            return data
