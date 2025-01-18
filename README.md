@@ -16,7 +16,7 @@ main.py includes the CATE experiment.
 All results from the experiments are available in the results directory and notebooks for visualizing them are in the visualization directory.
 
 <p align="center">
-  <img src="figures/diagram_complete.png" alt="experiments" width="650" height="700">
+  <img src="figures/all_experiments_git_version.png" alt="experiments" width="650" height="700">
   <br>
   <em>Figure 2: Visual representation of goals and experiments in this work. All experiments that include applying Reconcile are colored blue. The corresponding executable files are written outside the boxes.</em>
 </p>
