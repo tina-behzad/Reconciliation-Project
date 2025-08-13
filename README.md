@@ -23,12 +23,13 @@ All results from the experiments are available in the results directory and note
 </p>
 
 ## Cite
-This repository was developed as part of [our work](https://arxiv.org/pdf/2501.16549) and has been accepted in FAccT 2025. We ask that you consider citing our paper:
+This repository was developed as part of [our work](https://dl.acm.org/doi/full/10.1145/3715275.3732216) and has been accepted in FAccT 2025. We ask that you consider citing our paper:
 ```
-@article{behzad2025reconciling,
+@inproceedings{behzad2025reconciling,
   title={Reconciling Predictive Multiplicity in Practice},
   author={Behzad, Tina and Casacuberta, S{\'\i}lvia and Diana, Emily Ruth and Tolbert, Alexander Williams},
-  journal={arXiv preprint arXiv:2501.16549},
+  booktitle={Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency},
+  pages={3350--3369},
   year={2025}
 }
 ```
